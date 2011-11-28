@@ -31,7 +31,7 @@ However, [OAuthConsumer] process network handling internally, with NSURLConnecti
 
 So, I decide to re-implement it: **OAuth 1.0** and **2.0 (draft 22)**, following the spec as strictly as I could. 
 
-* A base64 implementation is just for fun at the beginning. When I finished the code, I had a profiling among with NSData+Base64 (along with [OAuthCore]),  [josefsson's base64] (which is now a GNU CoreUtils implementation) and [libb64]. The NSData+Base64 is the slowest, and my implementation is the fastest (On Macbook pro and an iPod 3G). Although on a Mac, my implementation is not much faster than  [josefsson's base64] and [libb64], but on an iPod, it is faster enough (both on a Mac and iPod, tested for a nearly 1.5MB png file). (You can check the [benchmark] result)
+* A base64 implementation is just for fun at the beginning. When I finished the code, I had a profiling among NSData+Base64 (along with [OAuthCore]),  [josefsson's base64] (which is now a GNU CoreUtils implementation) and [libb64]. The NSData+Base64 is the slowest, and my implementation is the fastest (On Macbook pro and an iPod 3G). Although on a Mac, my implementation is not much faster than  [josefsson's base64] and [libb64], but on an iPod, it is faster enough (both on a Mac and iPod, tested for a nearly 1.5MB png file). (You can check the [benchmark] result)
 
 [OAuth]: http://oauth.net/
 [douban.com]: www.douban.com
