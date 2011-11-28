@@ -50,7 +50,7 @@ What can I do with it?
 Just as:
 
 ```objective-c
-    NSString * base64encoded = [data base64String];m
+    NSString * base64encoded = [data base64String];
 ```
 
 or
