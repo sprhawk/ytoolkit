@@ -44,11 +44,11 @@ So, I decide to re-implement it: **OAuth 1.0** and **2.0 (draft 22)**, following
 What can I do with it?
 --------------------
 
-* The ytoolkit generates ybase64.a,  ybase64additions.a, yoauth.a, yoauthadditions.a, and ytoolkit.framework (statically linked faked framework.  Thanks to the [ios-Universal-Framework] project).  You can either use the lib(s) , or the framework alone. Just add ytoolkit project as a dependencies of your project, and link the libs. All required headers will be generated under {BUILT_PRODUCTS_DIR}/usr/local/include, you should add this path into your header search path (See how [ytoolkitdemo] does)
+* The ytoolkit generates ybase64.a,  ybase64additions.a, yoauth.a, yoauthadditions.a, and ytoolkit.framework (statically linked faked framework.  Thanks to the [ios-Universal-Framework] project).  You can either use the lib(s) , or the framework alone. Just add ytoolkit project as a dependencies of your project, and link the libs. All required headers will be generated under {BUILT_PRODUCTS_DIR}/usr/local/include, you should add this path into your header search path (See how [ytoolkitdemo] does). If you want to use the framework, just link against it, all required headers are just bundled in it.
 
 [ios-Universal-Framework]: https://github.com/kstenerud/iOS-Universal-Framework
 
-* You can use its base64 lib, core is an pure C implementation, with NSString/NSData categories, which is handy under Cocoa foundation.
+* You can only use its base64 lib, the core is a pure C implementation, with NSString/NSData categories, which is handy under Cocoa foundation.
 Just as:
 
 ```objective-c
