@@ -1,7 +1,7 @@
 YToolkit for Cocoa
 ===========
 
-1. What it includes
+What it includes
 ----------------
 
 At the moment , the YToolkit includes a **base64 lib** (implemented in C, with NSData/NSString catetories), a handy **cocoa categories** lib, an  **oauth 1.0 & 2.0** lib (implemented in C function but using Cocoa object arguments, with **NSMutableURLRequest & [ASIHTTPRequest] categories**).
@@ -19,7 +19,7 @@ Besides, a demo for YToolkit is available from [ytoolkitdemo][] (which is includ
 [ASIHTTPRequest]: https://github.com/pokeb/asi-http-request/tree
 
 
-2. Why implementing again? 
+Why implementing again? 
 -----------------------
 
 * I have used some [OAuth] implementation for iOS, such as [OAuthConsumer], [OAuthCore], each of them has its pros and cons.
@@ -39,7 +39,7 @@ So, I decide to re-implement it: **OAuth 1.0** and **2.0 (draft 22)**, following
 [libb64]: http://libb64.sourceforge.net/
 [benchmark]: https://github.com/sprhawk/ytoolkit/blob/master/BENCHMARK
 
-3. What can I do with it?
+What can I do with it?
 --------------------
 
 * The ytoolkit generates ybase64.a,  ybase64additions.a, yoauth.a, yoauthadditions.a, and ytoolkit.framework (statically linked faked framework.  Thanks to the [ios-Universal-Framework] project).  You can either use the lib(s) alone, or the framework. Just add ytoolkit project as a dependencies of your project, and link the libs. All required headers will be generated under {BUILT_PRODUCTS_DIR}/usr/local/include, you should add this path into your header search path (See how [ytoolkitdemo] does)
@@ -72,7 +72,7 @@ or
 
 [cocoa additions]: https://github.com/sprhawk/ytoolkit/tree/master/ycocoaadditions/code
 
-4. License
+License
 --------------------
 
 The core of ytoolkit is distributed under [LGPL v3.0], you can freely link ytoolkit against any part of your program.
