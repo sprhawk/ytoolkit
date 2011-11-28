@@ -3,6 +3,7 @@ YToolkit for Cocoa
 
 1. What it includes
 ----------------
+
 At the moment , the YToolkit includes a **base64 lib** (implemented in C, with NSData/NSString catetories), a handy **cocoa categories** lib, an  **oauth 1.0 & 2.0** lib (implemented in C function but using Cocoa object arguments, with **NSMutableURLRequest & [ASIHTTPRequest] categories**).
 
 Besides, a demo for YToolkit is available from [ytoolkitdemo][] (which is including demos for signing in & retrieving basic data from **[Twitter]**, **[Facebook]**, **[Douban]**, **[Sina Weibo]**, **[QQ Weibo]**, etc).
@@ -20,6 +21,7 @@ Besides, a demo for YToolkit is available from [ytoolkitdemo][] (which is includ
 
 2. Why implementing again? 
 -----------------------
+
 * I have used some [OAuth] implementation for iOS, such as [OAuthConsumer], [OAuthCore], each of them has its pros and cons.
   > About one year and a half ago I started to learn iPhone development, I wanted to make a client for [douban.com][]. Then I tried [OAuthConsumer], after some hard work, I got [OAuthConsumer] working.
 However, [OAuthConsumer] process network handling internally, with NSURLConnection. If I want to use the ASIHTTPRequest, it just can't help. Besides, [OAuthConsumer] simply handles error according to  OATicket object is nil or non-nil ( it assumes returned format is form-url-encoded), programmers cannot get the real reason why it can't work.
@@ -39,6 +41,7 @@ So, I decide to re-implement it: **OAuth 1.0** and **2.0 (draft 22)**, following
 
 3. What can I do with it?
 --------------------
+
 * The ytoolkit generates ybase64.a,  ybase64additions.a, yoauth.a, yoauthadditions.a, and ytoolkit.framework (statically linked faked framework.  Thanks to the [ios-Universal-Framework] project).  You can either use the lib(s) alone, or the framework. Just add ytoolkit project as a dependencies of your project, and link the libs. All required headers will be generated under {BUILT_PRODUCTS_DIR}/usr/local/include, you should add this path into your header search path (See how [ytoolkitdemo] does)
 
 [ios-Universal-Framework]: https://github.com/kstenerud/iOS-Universal-Framework
@@ -71,6 +74,7 @@ or
 
 4. License
 --------------------
+
 The core of ytoolkit is distributed under [LGPL v3.0], you can freely link ytoolkit against any part of your program.
 
 except, the ASIHTTPRequest additions are under FreeBSD license, you can use it without any restrictions ( Because this ASIHTTPRequest may be compiled into your project)
