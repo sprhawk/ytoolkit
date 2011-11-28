@@ -25,7 +25,7 @@ Why implementing again?
 * I have used some [OAuth] implementation for iOS, such as [OAuthConsumer], [OAuthCore], each of them has its pros and cons.
 
   > About one year and a half ago I started to learn iPhone development, I wanted to make a client for [douban.com][]. Then I tried [OAuthConsumer], after some hard work, I got [OAuthConsumer] working.
-However, [OAuthConsumer] process network handling internally, with NSURLConnection. If I want to use the ASIHTTPRequest, it just can't help. Besides, [OAuthConsumer] simply handles error according to  OATicket object is nil or non-nil ( it assumes returned format is form-url-encoded), programmers cannot get the real reason why it can't work.
+However, [OAuthConsumer] handles network with NSURLConnection internally. If I want to use the ASIHTTPRequest, it just can't help. Besides, [OAuthConsumer] simply handles error according to  OATicket object is nil or non-nil ( it assumes returned format is form-url-encoded), programmers cannot get the real reason why it can't work.
 
   > Then I turned to use [OAuthCore]. It is simply a C function, which generates a OAuth 1.0 Authorization Header, one can integrate it with any HTTP handling libs. But [OAuthCore] only generate OAuth 1.0 spec Authorization without an optional realm value, which may be required by a OAuth provider. 
 
