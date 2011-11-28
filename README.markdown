@@ -77,7 +77,7 @@ License
 
 The core of ytoolkit is distributed under [LGPL v3.0], you can freely link ytoolkit against any part of your program.
 
-except, the ASIHTTPRequest additions are under FreeBSD license, you can use it without any restrictions ( Because this ASIHTTPRequest may be compiled into your project)
+Except that, the ASIHTTPRequest additions are under FreeBSD license, you can use it without any restrictions ( Because this ASIHTTPRequest may be compiled into your project)
 
 [LGPL v3.0]: http://www.gnu.org/licenses/lgpl.html
 
