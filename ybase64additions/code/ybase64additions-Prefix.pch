@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ybase64additions' target in the 'ybase64additions' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

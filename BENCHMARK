@@ -1,0 +1,470 @@
+Note:
+1. Tested On an iPod 3Gen
+2. I didn't make Libb64 encode correctly
+3. When I use NSData+Base64, it cannot decode the base64 encoded string correctly
+
+Nov 19 00:04:26 unknown base64Profiling[1808] <Warning>: compareToLibb64Imp
+Nov 19 00:04:26 unknown base64Profiling[1808] <Warning>: ------------Libb64 Imp encode (data size:14772755)
+	timing results (50 rounds):
+Nov 19 00:04:27 unknown base64Profiling[1808] <Warning>: round 0: 452.943970 ms
+Nov 19 00:04:27 unknown base64Profiling[1808] <Warning>: round 1: 388.187012 ms
+Nov 19 00:04:27 unknown base64Profiling[1808] <Warning>: round 2: 388.563995 ms
+Nov 19 00:04:28 unknown base64Profiling[1808] <Warning>: round 3: 388.278992 ms
+Nov 19 00:04:28 unknown base64Profiling[1808] <Warning>: round 4: 387.298004 ms
+Nov 19 00:04:29 unknown base64Profiling[1808] <Warning>: round 5: 389.083984 ms
+Nov 19 00:04:29 unknown base64Profiling[1808] <Warning>: round 6: 388.191986 ms
+Nov 19 00:04:29 unknown base64Profiling[1808] <Warning>: round 7: 395.473999 ms
+Nov 19 00:04:30 unknown base64Profiling[1808] <Warning>: round 8: 518.895996 ms
+Nov 19 00:04:30 unknown base64Profiling[1808] <Warning>: round 9: 396.601013 ms
+Nov 19 00:04:31 unknown base64Profiling[1808] <Warning>: round 10: 387.893982 ms
+Nov 19 00:04:31 unknown base64Profiling[1808] <Warning>: round 11: 389.003998 ms
+Nov 19 00:04:31 unknown base64Profiling[1808] <Warning>: round 12: 386.445007 ms
+Nov 19 00:04:32 unknown base64Profiling[1808] <Warning>: round 13: 390.328979 ms
+Nov 19 00:04:32 unknown base64Profiling[1808] <Warning>: round 14: 389.446991 ms
+Nov 19 00:04:33 unknown base64Profiling[1808] <Warning>: round 15: 389.185974 ms
+Nov 19 00:04:33 unknown base64Profiling[1808] <Warning>: round 16: 388.208008 ms
+Nov 19 00:04:33 unknown base64Profiling[1808] <Warning>: round 17: 390.489014 ms
+Nov 19 00:04:34 unknown base64Profiling[1808] <Warning>: round 18: 388.088989 ms
+Nov 19 00:04:34 unknown base64Profiling[1808] <Warning>: round 19: 392.794006 ms
+Nov 19 00:04:35 unknown base64Profiling[1808] <Warning>: round 20: 392.198975 ms
+Nov 19 00:04:35 unknown base64Profiling[1808] <Warning>: round 21: 389.016998 ms
+Nov 19 00:04:35 unknown base64Profiling[1808] <Warning>: round 22: 397.411987 ms
+Nov 19 00:04:36 unknown base64Profiling[1808] <Warning>: round 23: 388.551025 ms
+Nov 19 00:04:36 unknown base64Profiling[1808] <Warning>: round 24: 389.575012 ms
+Nov 19 00:04:37 unknown base64Profiling[1808] <Warning>: round 25: 387.599976 ms
+Nov 19 00:04:37 unknown base64Profiling[1808] <Warning>: round 26: 392.179993 ms
+Nov 19 00:04:37 unknown base64Profiling[1808] <Warning>: round 27: 391.928009 ms
+Nov 19 00:04:38 unknown base64Profiling[1808] <Warning>: round 28: 389.734985 ms
+Nov 19 00:04:38 unknown base64Profiling[1808] <Warning>: round 29: 390.417999 ms
+Nov 19 00:04:39 unknown base64Profiling[1808] <Warning>: round 30: 387.700989 ms
+Nov 19 00:04:39 unknown base64Profiling[1808] <Warning>: round 31: 388.156006 ms
+Nov 19 00:04:39 unknown base64Profiling[1808] <Warning>: round 32: 396.647003 ms
+Nov 19 00:04:40 unknown base64Profiling[1808] <Warning>: round 33: 393.956970 ms
+Nov 19 00:04:40 unknown base64Profiling[1808] <Warning>: round 34: 387.717987 ms
+Nov 19 00:04:41 unknown base64Profiling[1808] <Warning>: round 35: 391.927002 ms
+Nov 19 00:04:41 unknown base64Profiling[1808] <Warning>: round 36: 388.455994 ms
+Nov 19 00:04:41 unknown base64Profiling[1808] <Warning>: round 37: 388.483002 ms
+Nov 19 00:04:42 unknown base64Profiling[1808] <Warning>: round 38: 390.174011 ms
+Nov 19 00:04:42 unknown base64Profiling[1808] <Warning>: round 39: 385.903015 ms
+Nov 19 00:04:42 unknown base64Profiling[1808] <Warning>: round 40: 387.345001 ms
+Nov 19 00:04:43 unknown base64Profiling[1808] <Warning>: round 41: 389.825989 ms
+Nov 19 00:04:43 unknown base64Profiling[1808] <Warning>: round 42: 387.946991 ms
+Nov 19 00:04:44 unknown base64Profiling[1808] <Warning>: round 43: 387.939026 ms
+Nov 19 00:04:44 unknown base64Profiling[1808] <Warning>: round 44: 395.708008 ms
+Nov 19 00:04:44 unknown base64Profiling[1808] <Warning>: round 45: 387.539001 ms
+Nov 19 00:04:45 unknown base64Profiling[1808] <Warning>: round 46: 388.870972 ms
+Nov 19 00:04:45 unknown base64Profiling[1808] <Warning>: round 47: 389.097992 ms
+Nov 19 00:04:46 unknown base64Profiling[1808] <Warning>: round 48: 388.500000 ms
+Nov 19 00:04:46 unknown base64Profiling[1808] <Warning>: round 49: 388.369995 ms
+Nov 19 00:04:46 unknown base64Profiling[1808] <Warning>: ------------mean time:393.685676 ms
+Nov 19 00:04:46 unknown base64Profiling[1808] <Warning>: ------------__oauth Imp encode (data size:14772755)
+	timing results (50 rounds):
+Nov 19 00:04:46 unknown base64Profiling[1808] <Warning>: round 0: 266.444000 ms
+Nov 19 00:04:46 unknown base64Profiling[1808] <Warning>: round 1: 202.317993 ms
+Nov 19 00:04:47 unknown base64Profiling[1808] <Warning>: round 2: 200.762024 ms
+Nov 19 00:04:47 unknown base64Profiling[1808] <Warning>: round 3: 201.746002 ms
+Nov 19 00:04:47 unknown base64Profiling[1808] <Warning>: round 4: 202.167007 ms
+Nov 19 00:04:47 unknown base64Profiling[1808] <Warning>: round 5: 201.994995 ms
+Nov 19 00:04:48 unknown base64Profiling[1808] <Warning>: round 6: 203.681030 ms
+Nov 19 00:04:48 unknown base64Profiling[1808] <Warning>: round 7: 202.776993 ms
+Nov 19 00:04:48 unknown base64Profiling[1808] <Warning>: round 8: 204.126999 ms
+Nov 19 00:04:48 unknown base64Profiling[1808] <Warning>: round 9: 202.313995 ms
+Nov 19 00:04:48 unknown base64Profiling[1808] <Warning>: round 10: 201.951004 ms
+Nov 19 00:04:49 unknown base64Profiling[1808] <Warning>: round 11: 203.004028 ms
+Nov 19 00:04:49 unknown base64Profiling[1808] <Warning>: round 12: 202.794006 ms
+Nov 19 00:04:49 unknown base64Profiling[1808] <Warning>: round 13: 205.694000 ms
+Nov 19 00:04:49 unknown base64Profiling[1808] <Warning>: round 14: 210.001007 ms
+Nov 19 00:04:49 unknown base64Profiling[1808] <Warning>: round 15: 202.091995 ms
+Nov 19 00:04:50 unknown base64Profiling[1808] <Warning>: round 16: 201.934021 ms
+Nov 19 00:04:50 unknown base64Profiling[1808] <Warning>: round 17: 202.789001 ms
+Nov 19 00:04:50 unknown base64Profiling[1808] <Warning>: round 18: 202.138000 ms
+Nov 19 00:04:50 unknown base64Profiling[1808] <Warning>: round 19: 200.212997 ms
+Nov 19 00:04:50 unknown base64Profiling[1808] <Warning>: round 20: 202.113007 ms
+Nov 19 00:04:51 unknown base64Profiling[1808] <Warning>: round 21: 202.304016 ms
+Nov 19 00:04:51 unknown base64Profiling[1808] <Warning>: round 22: 202.233002 ms
+Nov 19 00:04:51 unknown base64Profiling[1808] <Warning>: round 23: 201.936005 ms
+Nov 19 00:04:51 unknown base64Profiling[1808] <Warning>: round 24: 202.449005 ms
+Nov 19 00:04:51 unknown base64Profiling[1808] <Warning>: round 25: 202.184006 ms
+Nov 19 00:04:52 unknown base64Profiling[1808] <Warning>: round 26: 203.718018 ms
+Nov 19 00:04:52 unknown base64Profiling[1808] <Warning>: round 27: 202.606995 ms
+Nov 19 00:04:52 unknown base64Profiling[1808] <Warning>: round 28: 202.033005 ms
+Nov 19 00:04:52 unknown base64Profiling[1808] <Warning>: round 29: 214.533005 ms
+Nov 19 00:04:52 unknown base64Profiling[1808] <Warning>: round 30: 202.070007 ms
+Nov 19 00:04:53 unknown base64Profiling[1808] <Warning>: round 31: 203.151001 ms
+Nov 19 00:04:53 unknown base64Profiling[1808] <Warning>: round 32: 206.074005 ms
+Nov 19 00:04:53 unknown base64Profiling[1808] <Warning>: round 33: 222.076004 ms
+Nov 19 00:04:53 unknown base64Profiling[1808] <Warning>: round 34: 212.585007 ms
+Nov 19 00:04:54 unknown base64Profiling[1808] <Warning>: round 35: 215.250000 ms
+Nov 19 00:04:54 unknown base64Profiling[1808] <Warning>: round 36: 221.584000 ms
+Nov 19 00:04:54 unknown base64Profiling[1808] <Warning>: round 37: 209.552994 ms
+Nov 19 00:04:54 unknown com.apple.networkd[1810] <Notice>: main:212 networkd.1810 built Nov  2 2011 20:21:54
+Nov 19 00:04:54 unknown base64Profiling[1808] <Warning>: round 38: 283.339996 ms
+Nov 19 00:04:54 unknown base64Profiling[1808] <Warning>: round 39: 203.065994 ms
+Nov 19 00:04:55 unknown base64Profiling[1808] <Warning>: round 40: 208.601013 ms
+Nov 19 00:04:55 unknown base64Profiling[1808] <Warning>: round 41: 202.403000 ms
+Nov 19 00:04:55 unknown base64Profiling[1808] <Warning>: round 42: 204.113007 ms
+Nov 19 00:04:55 unknown base64Profiling[1808] <Warning>: round 43: 208.046005 ms
+Nov 19 00:04:56 unknown base64Profiling[1808] <Warning>: round 44: 214.882996 ms
+Nov 19 00:04:56 unknown base64Profiling[1808] <Warning>: round 45: 217.283997 ms
+Nov 19 00:04:56 unknown base64Profiling[1808] <Warning>: round 46: 211.322006 ms
+Nov 19 00:04:56 unknown base64Profiling[1808] <Warning>: round 47: 261.553986 ms
+Nov 19 00:04:57 unknown base64Profiling[1808] <Warning>: round 48: 311.755981 ms
+Nov 19 00:04:57 unknown base64Profiling[1808] <Warning>: round 49: 203.369003 ms
+Nov 19 00:04:57 unknown base64Profiling[1808] <Warning>: ------------mean time:211.582623 ms
+Nov 19 00:04:58 unknown base64Profiling[1808] <Warning>: ------------Libb64 Imp decode (data size:19697009)
+	timing results (50 rounds):
+Nov 19 00:04:58 unknown base64Profiling[1808] <Warning>: round 0: 692.129028 ms
+Nov 19 00:04:59 unknown base64Profiling[1808] <Warning>: round 1: 650.028992 ms
+Nov 19 00:05:00 unknown base64Profiling[1808] <Warning>: round 2: 697.971985 ms
+Nov 19 00:05:00 unknown base64Profiling[1808] <Warning>: round 3: 669.153992 ms
+Nov 19 00:05:01 unknown base64Profiling[1808] <Warning>: round 4: 682.926025 ms
+Nov 19 00:05:02 unknown base64Profiling[1808] <Warning>: round 5: 668.052979 ms
+Nov 19 00:05:02 unknown base64Profiling[1808] <Warning>: round 6: 659.065979 ms
+Nov 19 00:05:03 unknown base64Profiling[1808] <Warning>: round 7: 639.535034 ms
+Nov 19 00:05:04 unknown base64Profiling[1808] <Warning>: round 8: 642.049988 ms
+Nov 19 00:05:04 unknown base64Profiling[1808] <Warning>: round 9: 657.622009 ms
+Nov 19 00:05:05 unknown base64Profiling[1808] <Warning>: round 10: 651.535034 ms
+Nov 19 00:05:06 unknown base64Profiling[1808] <Warning>: round 11: 641.406982 ms
+Nov 19 00:05:06 unknown base64Profiling[1808] <Warning>: round 12: 652.073975 ms
+Nov 19 00:05:07 unknown base64Profiling[1808] <Warning>: round 13: 644.089966 ms
+Nov 19 00:05:08 unknown base64Profiling[1808] <Warning>: round 14: 643.916016 ms
+Nov 19 00:05:08 unknown base64Profiling[1808] <Warning>: round 15: 639.986023 ms
+Nov 19 00:05:09 unknown base64Profiling[1808] <Warning>: round 16: 642.127014 ms
+Nov 19 00:05:10 unknown base64Profiling[1808] <Warning>: round 17: 646.445007 ms
+Nov 19 00:05:10 unknown base64Profiling[1808] <Warning>: round 18: 651.171021 ms
+Nov 19 00:05:11 unknown base64Profiling[1808] <Warning>: round 19: 639.504028 ms
+Nov 19 00:05:11 unknown base64Profiling[1808] <Warning>: round 20: 644.171997 ms
+Nov 19 00:05:12 unknown base64Profiling[1808] <Warning>: round 21: 664.485962 ms
+Nov 19 00:05:13 unknown base64Profiling[1808] <Warning>: round 22: 649.058960 ms
+Nov 19 00:05:13 unknown base64Profiling[1808] <Warning>: round 23: 640.760986 ms
+Nov 19 00:05:14 unknown base64Profiling[1808] <Warning>: round 24: 642.315002 ms
+Nov 19 00:05:15 unknown base64Profiling[1808] <Warning>: round 25: 654.627991 ms
+Nov 19 00:05:15 unknown base64Profiling[1808] <Warning>: round 26: 640.385986 ms
+Nov 19 00:05:16 unknown base64Profiling[1808] <Warning>: round 27: 641.291992 ms
+Nov 19 00:05:17 unknown base64Profiling[1808] <Warning>: round 28: 648.375000 ms
+Nov 19 00:05:17 unknown base64Profiling[1808] <Warning>: round 29: 641.877991 ms
+Nov 19 00:05:18 unknown base64Profiling[1808] <Warning>: round 30: 641.359009 ms
+Nov 19 00:05:19 unknown base64Profiling[1808] <Warning>: round 31: 641.894043 ms
+Nov 19 00:05:19 unknown base64Profiling[1808] <Warning>: round 32: 649.460999 ms
+Nov 19 00:05:20 unknown base64Profiling[1808] <Warning>: round 33: 643.390991 ms
+Nov 19 00:05:21 unknown base64Profiling[1808] <Warning>: round 34: 642.018005 ms
+Nov 19 00:05:21 unknown base64Profiling[1808] <Warning>: round 35: 641.163025 ms
+Nov 19 00:05:22 unknown base64Profiling[1808] <Warning>: round 36: 643.941040 ms
+Nov 19 00:05:22 unknown base64Profiling[1808] <Warning>: round 37: 643.682983 ms
+Nov 19 00:05:23 unknown base64Profiling[1808] <Warning>: round 38: 642.848022 ms
+Nov 19 00:05:24 unknown base64Profiling[1808] <Warning>: round 39: 641.403992 ms
+Nov 19 00:05:24 unknown base64Profiling[1808] <Warning>: round 40: 650.182983 ms
+Nov 19 00:05:25 unknown base64Profiling[1808] <Warning>: round 41: 649.687012 ms
+Nov 19 00:05:26 unknown base64Profiling[1808] <Warning>: round 42: 642.997009 ms
+Nov 19 00:05:26 unknown base64Profiling[1808] <Warning>: round 43: 639.539001 ms
+Nov 19 00:05:27 unknown base64Profiling[1808] <Warning>: round 44: 642.479004 ms
+Nov 19 00:05:28 unknown base64Profiling[1808] <Warning>: round 45: 641.046021 ms
+Nov 19 00:05:28 unknown base64Profiling[1808] <Warning>: round 46: 648.328003 ms
+Nov 19 00:05:29 unknown base64Profiling[1808] <Warning>: round 47: 640.744019 ms
+Nov 19 00:05:30 unknown base64Profiling[1808] <Warning>: round 48: 780.484009 ms
+Nov 19 00:05:30 unknown base64Profiling[1808] <Warning>: round 49: 648.437012 ms
+Nov 19 00:05:30 unknown base64Profiling[1808] <Warning>: ------------mean time:651.864583 ms
+Nov 19 00:05:30 unknown base64Profiling[1808] <Warning>: ------------__oauth Imp decode (data size:19697008)
+	timing results (50 rounds):
+Nov 19 00:05:31 unknown base64Profiling[1808] <Warning>: round 0: 307.682007 ms
+Nov 19 00:05:31 unknown base64Profiling[1808] <Warning>: round 1: 259.597992 ms
+Nov 19 00:05:31 unknown base64Profiling[1808] <Warning>: round 2: 259.503998 ms
+Nov 19 00:05:32 unknown base64Profiling[1808] <Warning>: round 3: 259.838013 ms
+Nov 19 00:05:32 unknown base64Profiling[1808] <Warning>: round 4: 261.152008 ms
+Nov 19 00:05:32 unknown base64Profiling[1808] <Warning>: round 5: 261.601990 ms
+Nov 19 00:05:32 unknown base64Profiling[1808] <Warning>: round 6: 259.593994 ms
+Nov 19 00:05:33 unknown base64Profiling[1808] <Warning>: round 7: 261.818970 ms
+Nov 19 00:05:33 unknown base64Profiling[1808] <Warning>: round 8: 260.067993 ms
+Nov 19 00:05:33 unknown base64Profiling[1808] <Warning>: round 9: 261.528992 ms
+Nov 19 00:05:33 unknown base64Profiling[1808] <Warning>: round 10: 259.463013 ms
+Nov 19 00:05:34 unknown base64Profiling[1808] <Warning>: round 11: 259.828003 ms
+Nov 19 00:05:34 unknown base64Profiling[1808] <Warning>: round 12: 260.955994 ms
+Nov 19 00:05:34 unknown base64Profiling[1808] <Warning>: round 13: 265.108002 ms
+Nov 19 00:05:34 unknown base64Profiling[1808] <Warning>: round 14: 259.705994 ms
+Nov 19 00:05:35 unknown base64Profiling[1808] <Warning>: round 15: 263.273010 ms
+Nov 19 00:05:35 unknown base64Profiling[1808] <Warning>: round 16: 262.092010 ms
+Nov 19 00:05:35 unknown base64Profiling[1808] <Warning>: round 17: 258.362000 ms
+Nov 19 00:05:36 unknown base64Profiling[1808] <Warning>: round 18: 260.556030 ms
+Nov 19 00:05:36 unknown base64Profiling[1808] <Warning>: round 19: 260.338989 ms
+Nov 19 00:05:36 unknown base64Profiling[1808] <Warning>: round 20: 260.700989 ms
+Nov 19 00:05:36 unknown base64Profiling[1808] <Warning>: round 21: 259.502991 ms
+Nov 19 00:05:37 unknown base64Profiling[1808] <Warning>: round 22: 258.129028 ms
+Nov 19 00:05:37 unknown base64Profiling[1808] <Warning>: round 23: 261.294006 ms
+Nov 19 00:05:37 unknown base64Profiling[1808] <Warning>: round 24: 260.036011 ms
+Nov 19 00:05:37 unknown base64Profiling[1808] <Warning>: round 25: 259.587006 ms
+Nov 19 00:05:38 unknown base64Profiling[1808] <Warning>: round 26: 259.854980 ms
+Nov 19 00:05:38 unknown base64Profiling[1808] <Warning>: round 27: 259.854004 ms
+Nov 19 00:05:38 unknown base64Profiling[1808] <Warning>: round 28: 259.710999 ms
+Nov 19 00:05:38 unknown base64Profiling[1808] <Warning>: round 29: 263.501007 ms
+Nov 19 00:05:39 unknown base64Profiling[1808] <Warning>: round 30: 259.168030 ms
+Nov 19 00:05:39 unknown base64Profiling[1808] <Warning>: round 31: 258.704010 ms
+Nov 19 00:05:39 unknown base64Profiling[1808] <Warning>: round 32: 269.147003 ms
+Nov 19 00:05:39 unknown base64Profiling[1808] <Warning>: round 33: 258.154999 ms
+Nov 19 00:05:40 unknown base64Profiling[1808] <Warning>: round 34: 268.531006 ms
+Nov 19 00:05:40 unknown base64Profiling[1808] <Warning>: round 35: 264.946014 ms
+Nov 19 00:05:40 unknown base64Profiling[1808] <Warning>: round 36: 261.437988 ms
+Nov 19 00:05:41 unknown base64Profiling[1808] <Warning>: round 37: 259.296021 ms
+Nov 19 00:05:41 unknown base64Profiling[1808] <Warning>: round 38: 259.914001 ms
+Nov 19 00:05:41 unknown base64Profiling[1808] <Warning>: round 39: 260.242004 ms
+Nov 19 00:05:41 unknown base64Profiling[1808] <Warning>: round 40: 259.009003 ms
+Nov 19 00:05:42 unknown base64Profiling[1808] <Warning>: round 41: 261.700989 ms
+Nov 19 00:05:42 unknown base64Profiling[1808] <Warning>: round 42: 264.118011 ms
+Nov 19 00:05:42 unknown base64Profiling[1808] <Warning>: round 43: 263.071014 ms
+Nov 19 00:05:42 unknown base64Profiling[1808] <Warning>: round 44: 261.721985 ms
+Nov 19 00:05:43 unknown base64Profiling[1808] <Warning>: round 45: 259.857971 ms
+Nov 19 00:05:43 unknown base64Profiling[1808] <Warning>: round 46: 273.488007 ms
+Nov 19 00:05:43 unknown base64Profiling[1808] <Warning>: round 47: 259.497009 ms
+Nov 19 00:05:43 unknown base64Profiling[1808] <Warning>: round 48: 261.804993 ms
+Nov 19 00:05:44 unknown base64Profiling[1808] <Warning>: round 49: 258.489990 ms
+Nov 19 00:05:44 unknown base64Profiling[1808] <Warning>: ------------mean time:262.130801 ms
+Nov 19 00:05:45 unknown base64Profiling[1808] <Warning>: compareToLibb64Imp
+Nov 19 00:05:45 unknown base64Profiling[1808] <Warning>: ------------GNU Imp encode (data size:14772755)
+	timing results (50 rounds):
+Nov 19 00:05:46 unknown base64Profiling[1808] <Warning>: round 0: 438.903992 ms
+Nov 19 00:05:46 unknown base64Profiling[1808] <Warning>: round 1: 380.781006 ms
+Nov 19 00:05:46 unknown base64Profiling[1808] <Warning>: round 2: 378.842010 ms
+Nov 19 00:05:47 unknown base64Profiling[1808] <Warning>: round 3: 378.656982 ms
+Nov 19 00:05:47 unknown base64Profiling[1808] <Warning>: round 4: 381.746002 ms
+Nov 19 00:05:47 unknown base64Profiling[1808] <Warning>: round 5: 377.898010 ms
+Nov 19 00:05:48 unknown base64Profiling[1808] <Warning>: round 6: 378.778015 ms
+Nov 19 00:05:48 unknown base64Profiling[1808] <Warning>: round 7: 379.908997 ms
+Nov 19 00:05:49 unknown base64Profiling[1808] <Warning>: round 8: 377.401978 ms
+Nov 19 00:05:49 unknown base64Profiling[1808] <Warning>: round 9: 380.404999 ms
+Nov 19 00:05:49 unknown base64Profiling[1808] <Warning>: round 10: 389.539001 ms
+Nov 19 00:05:50 unknown base64Profiling[1808] <Warning>: round 11: 380.565002 ms
+Nov 19 00:05:50 unknown base64Profiling[1808] <Warning>: round 12: 379.450012 ms
+Nov 19 00:05:51 unknown base64Profiling[1808] <Warning>: round 13: 380.304016 ms
+Nov 19 00:05:51 unknown base64Profiling[1808] <Warning>: round 14: 377.186005 ms
+Nov 19 00:05:51 unknown base64Profiling[1808] <Warning>: round 15: 378.381989 ms
+Nov 19 00:05:52 unknown base64Profiling[1808] <Warning>: round 16: 380.187012 ms
+Nov 19 00:05:52 unknown base64Profiling[1808] <Warning>: round 17: 377.722992 ms
+Nov 19 00:05:52 unknown base64Profiling[1808] <Warning>: round 18: 381.907990 ms
+Nov 19 00:05:53 unknown base64Profiling[1808] <Warning>: round 19: 378.934998 ms
+Nov 19 00:05:53 unknown base64Profiling[1808] <Warning>: round 20: 376.911987 ms
+Nov 19 00:05:54 unknown base64Profiling[1808] <Warning>: round 21: 378.085999 ms
+Nov 19 00:05:54 unknown base64Profiling[1808] <Warning>: round 22: 380.546997 ms
+Nov 19 00:05:54 unknown base64Profiling[1808] <Warning>: round 23: 382.657990 ms
+Nov 19 00:05:55 unknown base64Profiling[1808] <Warning>: round 24: 379.489014 ms
+Nov 19 00:05:55 unknown base64Profiling[1808] <Warning>: round 25: 381.183990 ms
+Nov 19 00:05:55 unknown base64Profiling[1808] <Warning>: round 26: 378.553009 ms
+Nov 19 00:05:56 unknown base64Profiling[1808] <Warning>: round 27: 378.979980 ms
+Nov 19 00:05:56 unknown base64Profiling[1808] <Warning>: round 28: 383.872009 ms
+Nov 19 00:05:57 unknown base64Profiling[1808] <Warning>: round 29: 376.739990 ms
+Nov 19 00:05:57 unknown base64Profiling[1808] <Warning>: round 30: 379.348999 ms
+Nov 19 00:05:57 unknown base64Profiling[1808] <Warning>: round 31: 380.457001 ms
+Nov 19 00:05:58 unknown base64Profiling[1808] <Warning>: round 32: 376.794006 ms
+Nov 19 00:05:58 unknown base64Profiling[1808] <Warning>: round 33: 378.458008 ms
+Nov 19 00:05:59 unknown base64Profiling[1808] <Warning>: round 34: 379.864990 ms
+Nov 19 00:05:59 unknown base64Profiling[1808] <Warning>: round 35: 377.243011 ms
+Nov 19 00:05:59 unknown base64Profiling[1808] <Warning>: round 36: 385.320007 ms
+Nov 19 00:06:00 unknown base64Profiling[1808] <Warning>: round 37: 395.270996 ms
+Nov 19 00:06:00 unknown base64Profiling[1808] <Warning>: round 38: 377.729004 ms
+Nov 19 00:06:00 unknown base64Profiling[1808] <Warning>: round 39: 379.045013 ms
+Nov 19 00:06:01 unknown base64Profiling[1808] <Warning>: round 40: 380.968994 ms
+Nov 19 00:06:01 unknown base64Profiling[1808] <Warning>: round 41: 376.768005 ms
+Nov 19 00:06:02 unknown base64Profiling[1808] <Warning>: round 42: 378.812988 ms
+Nov 19 00:06:02 unknown base64Profiling[1808] <Warning>: round 43: 383.609985 ms
+Nov 19 00:06:02 unknown base64Profiling[1808] <Warning>: round 44: 380.078003 ms
+Nov 19 00:06:03 unknown base64Profiling[1808] <Warning>: round 45: 377.728027 ms
+Nov 19 00:06:03 unknown base64Profiling[1808] <Warning>: round 46: 380.053009 ms
+Nov 19 00:06:04 unknown base64Profiling[1808] <Warning>: round 47: 376.971008 ms
+Nov 19 00:06:04 unknown base64Profiling[1808] <Warning>: round 48: 379.466003 ms
+Nov 19 00:06:04 unknown base64Profiling[1808] <Warning>: round 49: 385.743011 ms
+Nov 19 00:06:04 unknown base64Profiling[1808] <Warning>: ------------mean time:381.285041 ms
+Nov 19 00:06:04 unknown base64Profiling[1808] <Warning>: ------------__oauth Imp encode (data size:14772755)
+	timing results (50 rounds):
+Nov 19 00:06:05 unknown base64Profiling[1808] <Warning>: round 0: 263.585999 ms
+Nov 19 00:06:05 unknown base64Profiling[1808] <Warning>: round 1: 202.692993 ms
+Nov 19 00:06:05 unknown base64Profiling[1808] <Warning>: round 2: 200.328003 ms
+Nov 19 00:06:05 unknown base64Profiling[1808] <Warning>: round 3: 202.085999 ms
+Nov 19 00:06:05 unknown base64Profiling[1808] <Warning>: round 4: 203.875000 ms
+Nov 19 00:06:06 unknown base64Profiling[1808] <Warning>: round 5: 202.065979 ms
+Nov 19 00:06:06 unknown base64Profiling[1808] <Warning>: round 6: 200.798996 ms
+Nov 19 00:06:06 unknown base64Profiling[1808] <Warning>: round 7: 200.139008 ms
+Nov 19 00:06:06 unknown base64Profiling[1808] <Warning>: round 8: 202.154007 ms
+Nov 19 00:06:06 unknown base64Profiling[1808] <Warning>: round 9: 201.496994 ms
+Nov 19 00:06:07 unknown base64Profiling[1808] <Warning>: round 10: 203.723999 ms
+Nov 19 00:06:07 unknown base64Profiling[1808] <Warning>: round 11: 202.733002 ms
+Nov 19 00:06:07 unknown base64Profiling[1808] <Warning>: round 12: 201.996002 ms
+Nov 19 00:06:07 unknown base64Profiling[1808] <Warning>: round 13: 202.255997 ms
+Nov 19 00:06:07 unknown base64Profiling[1808] <Warning>: round 14: 202.149994 ms
+Nov 19 00:06:08 unknown base64Profiling[1808] <Warning>: round 15: 204.757019 ms
+Nov 19 00:06:08 unknown base64Profiling[1808] <Warning>: round 16: 202.714005 ms
+Nov 19 00:06:08 unknown base64Profiling[1808] <Warning>: round 17: 202.255997 ms
+Nov 19 00:06:08 unknown base64Profiling[1808] <Warning>: round 18: 200.274994 ms
+Nov 19 00:06:08 unknown base64Profiling[1808] <Warning>: round 19: 201.843994 ms
+Nov 19 00:06:09 unknown base64Profiling[1808] <Warning>: round 20: 203.880981 ms
+Nov 19 00:06:09 unknown base64Profiling[1808] <Warning>: round 21: 202.061005 ms
+Nov 19 00:06:09 unknown base64Profiling[1808] <Warning>: round 22: 203.350998 ms
+Nov 19 00:06:09 unknown base64Profiling[1808] <Warning>: round 23: 200.552002 ms
+Nov 19 00:06:09 unknown base64Profiling[1808] <Warning>: round 24: 200.535004 ms
+Nov 19 00:06:10 unknown base64Profiling[1808] <Warning>: round 25: 204.382019 ms
+Nov 19 00:06:10 unknown base64Profiling[1808] <Warning>: round 26: 201.399994 ms
+Nov 19 00:06:10 unknown base64Profiling[1808] <Warning>: round 27: 201.871002 ms
+Nov 19 00:06:10 unknown base64Profiling[1808] <Warning>: round 28: 202.076004 ms
+Nov 19 00:06:11 unknown base64Profiling[1808] <Warning>: round 29: 201.715027 ms
+Nov 19 00:06:11 unknown base64Profiling[1808] <Warning>: round 30: 204.240005 ms
+Nov 19 00:06:11 unknown base64Profiling[1808] <Warning>: round 31: 202.395996 ms
+Nov 19 00:06:11 unknown base64Profiling[1808] <Warning>: round 32: 201.697006 ms
+Nov 19 00:06:11 unknown base64Profiling[1808] <Warning>: round 33: 202.125000 ms
+Nov 19 00:06:12 unknown base64Profiling[1808] <Warning>: round 34: 201.879028 ms
+Nov 19 00:06:12 unknown base64Profiling[1808] <Warning>: round 35: 201.087006 ms
+Nov 19 00:06:12 unknown base64Profiling[1808] <Warning>: round 36: 204.141998 ms
+Nov 19 00:06:12 unknown base64Profiling[1808] <Warning>: round 37: 200.287994 ms
+Nov 19 00:06:12 unknown base64Profiling[1808] <Warning>: round 38: 202.154007 ms
+Nov 19 00:06:13 unknown base64Profiling[1808] <Warning>: round 39: 202.200989 ms
+Nov 19 00:06:13 unknown base64Profiling[1808] <Warning>: round 40: 203.783997 ms
+Nov 19 00:06:13 unknown base64Profiling[1808] <Warning>: round 41: 203.804993 ms
+Nov 19 00:06:13 unknown base64Profiling[1808] <Warning>: round 42: 202.098999 ms
+Nov 19 00:06:13 unknown base64Profiling[1808] <Warning>: round 43: 201.731995 ms
+Nov 19 00:06:14 unknown base64Profiling[1808] <Warning>: round 44: 202.086975 ms
+Nov 19 00:06:14 unknown base64Profiling[1808] <Warning>: round 45: 202.485992 ms
+Nov 19 00:06:14 unknown base64Profiling[1808] <Warning>: round 46: 209.423996 ms
+Nov 19 00:06:14 unknown base64Profiling[1808] <Warning>: round 47: 200.630005 ms
+Nov 19 00:06:14 unknown base64Profiling[1808] <Warning>: round 48: 202.341003 ms
+Nov 19 00:06:15 unknown base64Profiling[1808] <Warning>: round 49: 202.012024 ms
+Nov 19 00:06:15 unknown base64Profiling[1808] <Warning>: ------------mean time:203.567220 ms
+Nov 19 00:06:16 unknown base64Profiling[1808] <Warning>: ------------GNU Imp decode(data size:19697008)
+	timing results (50 rounds):
+Nov 19 00:06:16 unknown base64Profiling[1808] <Warning>: round 0: 507.743988 ms
+Nov 19 00:06:17 unknown base64Profiling[1808] <Warning>: round 1: 459.655029 ms
+Nov 19 00:06:17 unknown base64Profiling[1808] <Warning>: round 2: 459.976013 ms
+Nov 19 00:06:17 unknown base64Profiling[1808] <Warning>: round 3: 460.044006 ms
+Nov 19 00:06:18 unknown base64Profiling[1808] <Warning>: round 4: 462.377014 ms
+Nov 19 00:06:18 unknown base64Profiling[1808] <Warning>: round 5: 460.902008 ms
+Nov 19 00:06:19 unknown base64Profiling[1808] <Warning>: round 6: 459.750977 ms
+Nov 19 00:06:19 unknown base64Profiling[1808] <Warning>: round 7: 465.084991 ms
+Nov 19 00:06:20 unknown base64Profiling[1808] <Warning>: round 8: 464.116028 ms
+Nov 19 00:06:20 unknown base64Profiling[1808] <Warning>: round 9: 459.981995 ms
+Nov 19 00:06:21 unknown base64Profiling[1808] <Warning>: round 10: 459.754028 ms
+Nov 19 00:06:21 unknown base64Profiling[1808] <Warning>: round 11: 461.467010 ms
+Nov 19 00:06:22 unknown base64Profiling[1808] <Warning>: round 12: 459.919983 ms
+Nov 19 00:06:22 unknown base64Profiling[1808] <Warning>: round 13: 459.859009 ms
+Nov 19 00:06:23 unknown base64Profiling[1808] <Warning>: round 14: 463.625977 ms
+Nov 19 00:06:23 unknown base64Profiling[1808] <Warning>: round 15: 462.083008 ms
+Nov 19 00:06:24 unknown base64Profiling[1808] <Warning>: round 16: 459.398987 ms
+Nov 19 00:06:24 unknown base64Profiling[1808] <Warning>: round 17: 462.076996 ms
+Nov 19 00:06:24 unknown base64Profiling[1808] <Warning>: round 18: 465.790985 ms
+Nov 19 00:06:25 unknown base64Profiling[1808] <Warning>: round 19: 460.591980 ms
+Nov 19 00:06:25 unknown base64Profiling[1808] <Warning>: round 20: 459.772003 ms
+Nov 19 00:06:26 unknown base64Profiling[1808] <Warning>: round 21: 459.859009 ms
+Nov 19 00:06:26 unknown base64Profiling[1808] <Warning>: round 22: 460.135986 ms
+Nov 19 00:06:27 unknown base64Profiling[1808] <Warning>: round 23: 460.460022 ms
+Nov 19 00:06:27 unknown base64Profiling[1808] <Warning>: round 24: 460.625000 ms
+Nov 19 00:06:28 unknown base64Profiling[1808] <Warning>: round 25: 460.077026 ms
+Nov 19 00:06:28 unknown base64Profiling[1808] <Warning>: round 26: 462.842987 ms
+Nov 19 00:06:29 unknown base64Profiling[1808] <Warning>: round 27: 458.669006 ms
+Nov 19 00:06:29 unknown base64Profiling[1808] <Warning>: round 28: 465.596008 ms
+Nov 19 00:06:30 unknown base64Profiling[1808] <Warning>: round 29: 459.742981 ms
+Nov 19 00:06:30 unknown base64Profiling[1808] <Warning>: round 30: 603.379028 ms
+Nov 19 00:06:31 unknown base64Profiling[1808] <Warning>: round 31: 465.492004 ms
+Nov 19 00:06:31 unknown base64Profiling[1808] <Warning>: round 32: 460.859985 ms
+Nov 19 00:06:32 unknown base64Profiling[1808] <Warning>: round 33: 458.073975 ms
+Nov 19 00:06:32 unknown base64Profiling[1808] <Warning>: round 34: 461.808014 ms
+Nov 19 00:06:32 unknown base64Profiling[1808] <Warning>: round 35: 459.751007 ms
+Nov 19 00:06:33 unknown base64Profiling[1808] <Warning>: round 36: 460.081970 ms
+Nov 19 00:06:33 unknown base64Profiling[1808] <Warning>: round 37: 462.657013 ms
+Nov 19 00:06:34 unknown base64Profiling[1808] <Warning>: round 38: 458.705017 ms
+Nov 19 00:06:34 unknown base64Profiling[1808] <Warning>: round 39: 465.641998 ms
+Nov 19 00:06:35 unknown base64Profiling[1808] <Warning>: round 40: 464.362976 ms
+Nov 19 00:06:35 unknown base64Profiling[1808] <Warning>: round 41: 458.381012 ms
+Nov 19 00:06:36 unknown base64Profiling[1808] <Warning>: round 42: 463.794006 ms
+Nov 19 00:06:36 unknown base64Profiling[1808] <Warning>: round 43: 461.877014 ms
+Nov 19 00:06:37 unknown base64Profiling[1808] <Warning>: round 44: 459.189026 ms
+Nov 19 00:06:37 unknown base64Profiling[1808] <Warning>: round 45: 460.388000 ms
+Nov 19 00:06:38 unknown base64Profiling[1808] <Warning>: round 46: 461.513000 ms
+Nov 19 00:06:38 unknown base64Profiling[1808] <Warning>: round 47: 462.104004 ms
+Nov 19 00:06:39 unknown base64Profiling[1808] <Warning>: round 48: 461.442993 ms
+Nov 19 00:06:39 unknown base64Profiling[1808] <Warning>: round 49: 459.972992 ms
+Nov 19 00:06:39 unknown base64Profiling[1808] <Warning>: ------------mean time:465.029102 ms
+Nov 19 00:06:39 unknown base64Profiling[1808] <Warning>: ------------__oauth Imp decode (data size:19697008)
+	timing results (50 rounds):
+Nov 19 00:06:39 unknown base64Profiling[1808] <Warning>: round 0: 312.069000 ms
+Nov 19 00:06:40 unknown base64Profiling[1808] <Warning>: round 1: 260.150024 ms
+Nov 19 00:06:40 unknown base64Profiling[1808] <Warning>: round 2: 264.322998 ms
+Nov 19 00:06:40 unknown base64Profiling[1808] <Warning>: round 3: 257.976013 ms
+Nov 19 00:06:40 unknown base64Profiling[1808] <Warning>: round 4: 261.335999 ms
+Nov 19 00:06:41 unknown base64Profiling[1808] <Warning>: round 5: 259.773010 ms
+Nov 19 00:06:41 unknown base64Profiling[1808] <Warning>: round 6: 259.437988 ms
+Nov 19 00:06:41 unknown base64Profiling[1808] <Warning>: round 7: 260.457001 ms
+Nov 19 00:06:42 unknown base64Profiling[1808] <Warning>: round 8: 262.890015 ms
+Nov 19 00:06:42 unknown base64Profiling[1808] <Warning>: round 9: 260.704987 ms
+Nov 19 00:06:42 unknown base64Profiling[1808] <Warning>: round 10: 261.541992 ms
+Nov 19 00:06:42 unknown base64Profiling[1808] <Warning>: round 11: 258.197998 ms
+Nov 19 00:06:43 unknown base64Profiling[1808] <Warning>: round 12: 259.672974 ms
+Nov 19 00:06:43 unknown base64Profiling[1808] <Warning>: round 13: 260.122986 ms
+Nov 19 00:06:43 unknown base64Profiling[1808] <Warning>: round 14: 259.872009 ms
+Nov 19 00:06:43 unknown base64Profiling[1808] <Warning>: round 15: 259.480011 ms
+Nov 19 00:06:44 unknown base64Profiling[1808] <Warning>: round 16: 261.932983 ms
+Nov 19 00:06:44 unknown base64Profiling[1808] <Warning>: round 17: 260.623993 ms
+Nov 19 00:06:44 unknown base64Profiling[1808] <Warning>: round 18: 263.627014 ms
+Nov 19 00:06:44 unknown base64Profiling[1808] <Warning>: round 19: 259.372986 ms
+Nov 19 00:06:45 unknown base64Profiling[1808] <Warning>: round 20: 258.343994 ms
+Nov 19 00:06:45 unknown base64Profiling[1808] <Warning>: round 21: 260.848999 ms
+Nov 19 00:06:45 unknown base64Profiling[1808] <Warning>: round 22: 259.645996 ms
+Nov 19 00:06:45 unknown base64Profiling[1808] <Warning>: round 23: 261.798004 ms
+Nov 19 00:06:46 unknown base64Profiling[1808] <Warning>: round 24: 259.664978 ms
+Nov 19 00:06:46 unknown base64Profiling[1808] <Warning>: round 25: 259.908997 ms
+Nov 19 00:06:46 unknown base64Profiling[1808] <Warning>: round 26: 260.027008 ms
+Nov 19 00:06:47 unknown base64Profiling[1808] <Warning>: round 27: 260.484009 ms
+Nov 19 00:06:47 unknown base64Profiling[1808] <Warning>: round 28: 260.145996 ms
+Nov 19 00:06:47 unknown base64Profiling[1808] <Warning>: round 29: 258.566986 ms
+Nov 19 00:06:47 unknown base64Profiling[1808] <Warning>: round 30: 260.174988 ms
+Nov 19 00:06:48 unknown base64Profiling[1808] <Warning>: round 31: 259.556030 ms
+Nov 19 00:06:48 unknown base64Profiling[1808] <Warning>: round 32: 261.664001 ms
+Nov 19 00:06:48 unknown base64Profiling[1808] <Warning>: round 33: 259.584015 ms
+Nov 19 00:06:48 unknown base64Profiling[1808] <Warning>: round 34: 259.467987 ms
+Nov 19 00:06:49 unknown base64Profiling[1808] <Warning>: round 35: 259.672974 ms
+Nov 19 00:06:49 unknown base64Profiling[1808] <Warning>: round 36: 261.838013 ms
+Nov 19 00:06:49 unknown base64Profiling[1808] <Warning>: round 37: 272.106995 ms
+Nov 19 00:06:49 unknown base64Profiling[1808] <Warning>: round 38: 259.635010 ms
+Nov 19 00:06:50 unknown base64Profiling[1808] <Warning>: round 39: 260.039001 ms
+Nov 19 00:06:50 unknown base64Profiling[1808] <Warning>: round 40: 261.533997 ms
+Nov 19 00:06:50 unknown base64Profiling[1808] <Warning>: round 41: 259.923004 ms
+Nov 19 00:06:50 unknown base64Profiling[1808] <Warning>: round 42: 259.881012 ms
+Nov 19 00:06:51 unknown base64Profiling[1808] <Warning>: round 43: 259.356995 ms
+Nov 19 00:06:51 unknown base64Profiling[1808] <Warning>: round 44: 261.829987 ms
+Nov 19 00:06:51 unknown base64Profiling[1808] <Warning>: round 45: 259.703003 ms
+Nov 19 00:06:52 unknown base64Profiling[1808] <Warning>: round 46: 259.005981 ms
+Nov 19 00:06:52 unknown base64Profiling[1808] <Warning>: round 47: 260.052002 ms
+Nov 19 00:06:52 unknown base64Profiling[1808] <Warning>: round 48: 261.792999 ms
+Nov 19 00:06:52 unknown base64Profiling[1808] <Warning>: round 49: 259.716003 ms
+Nov 19 00:06:52 unknown base64Profiling[1808] <Warning>: ------------mean time:261.590619 ms
+Nov 19 00:06:54 unknown MobileMail[97] <Warning>: Received memory warning.
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: Received memory warning.
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: compareToLibb64Imp
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: ------------__oauth_base64 implementation: encoding(size:1410855)
+	timing results (5 rounds):
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: round 0: 55.282001 ms
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: round 1: 53.987999 ms
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: round 2: 52.117001 ms
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: round 3: 51.646999 ms
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: round 4: 82.387001 ms
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: ------------mean time:59.084200 ms
+Nov 19 00:06:54 unknown base64Profiling[1808] <Warning>: ------------NSData+Base64String implementation: encoding(size:1410855)
+	timing results (5 rounds):
+Nov 19 00:06:54 unknown apsd[58] <Warning>: <APSCourier: 0x240010>: Stream error occurred for <APSTCPStream: 0x23e9d0>: Error Domain=NSPOSIXErrorDomain Code=54 "The operation couldn’t be completed. Connection reset by peer" UserInfo=0x252360 {}
+Nov 19 00:06:55 unknown base64Profiling[1808] <Warning>: round 0: 530.406982 ms
+Nov 19 00:06:55 unknown base64Profiling[1808] <Warning>: round 1: 493.963989 ms
+Nov 19 00:06:56 unknown base64Profiling[1808] <Warning>: round 2: 507.230988 ms
+Nov 19 00:06:56 unknown base64Profiling[1808] <Warning>: round 3: 702.242004 ms
+Nov 19 00:06:57 unknown base64Profiling[1808] <Warning>: round 4: 590.661987 ms
+Nov 19 00:06:57 unknown base64Profiling[1808] <Warning>: ------------mean time:564.901190 ms
+Nov 19 00:06:57 unknown com.apple.networkd[1815] <Notice>: main:212 networkd.1815 built Nov  2 2011 20:21:54
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: ------------__oauth_base64 implementation: decoding (size:1881140)
+	timing results (5 rounds):
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: round 0: 75.064003 ms
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: round 1: 71.950996 ms
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: round 2: 71.918999 ms
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: round 3: 77.516998 ms
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: round 4: 79.410004 ms
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: ------------mean time:75.172200 ms
+Nov 19 00:06:58 unknown base64Profiling[1808] <Warning>: ------------NSData+Base64String implementation: decoding (size:1881140)
+	timing results (5 rounds):
+Nov 19 00:06:59 unknown base64Profiling[1808] <Warning>: round 0: 447.586975 ms
+Nov 19 00:06:59 unknown base64Profiling[1808] <Warning>: round 1: 427.990997 ms
+Nov 19 00:06:59 unknown base64Profiling[1808] <Warning>: round 2: 520.533997 ms
+Nov 19 00:07:00 unknown base64Profiling[1808] <Warning>: round 3: 517.269043 ms
+Nov 19 00:07:00 unknown base64Profiling[1808] <Warning>: round 4: 431.442993 ms
+Nov 19 00:07:00 unknown base64Profiling[1808] <Warning>: ------------mean time:468.964801 ms
+Nov 19 00:07:01 unknown base64Profiling[1808] <Warning>: end
