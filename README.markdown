@@ -91,14 +91,14 @@ or
 
 >  ```Objective-c
 >    NSURL * url = [NSURL URLWithString:@"http://api.douban.com/people/%40me/miniblog?alt=json"];
->        ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
->        request.delegate = self;
->        [request prepareOAuthv1RequestUsingConsumerKey:kDoubanConsumerKey
->                                     consumerSecretKey:kDoubanConsumerSecretKey
->                                                 token:self.accesstoken
->                                           tokenSecret:self.tokensecret
->                                                 realm:kDoubanRealm];
->        [request startAsynchronous];
+>    ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
+>    request.delegate = self;
+>    [request prepareOAuthv1RequestUsingConsumerKey:kDoubanConsumerKey
+>                                 consumerSecretKey:kDoubanConsumerSecretKey
+>                                             token:self.accesstoken
+>                                       tokenSecret:self.tokensecret
+>                                             realm:kDoubanRealm];
+>    [request startAsynchronous];
 >  ```
 
   * Just see the [ytoolkitdemo] for usage example of most popular sites
