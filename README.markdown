@@ -45,6 +45,12 @@ What can I do with it?
 --------------------
 
 * The ytoolkit generates ybase64.a,  ybase64additions.a, yoauth.a, yoauthadditions.a, and ytoolkit.framework (statically linked faked framework.  Thanks to the [ios-Universal-Framework] project).  You can either use the lib(s) , or the framework alone. Just add ytoolkit project as a dependencies of your project, and link the libs. All required headers will be generated under {BUILT_PRODUCTS_DIR}/usr/local/include, you should add this path into your header search path (See how [ytoolkitdemo] does). If you want to use the framework, just link against it, all required headers are just bundled in it.
+  add 
+
+  > -ObjC
+  > -all_load
+
+    linker flags into your project
 
 [ios-Universal-Framework]: https://github.com/kstenerud/iOS-Universal-Framework
 
