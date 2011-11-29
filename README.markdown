@@ -86,4 +86,32 @@ Except that, the ASIHTTPRequest additions are under FreeBSD license, you can use
 Hope this is useful for you.
 ===============
 
+这里面有什么？
+------------
+
+一个快速的base64编码（纯C，及NSData/NSString的category），可以看项目页面的README和代码库里的benchmark，或者在ytoolkitdemo里跑profile
+
+一个cocoa附加库（包括词典到URL query，URL query到词典，URL分解为scheme, host, relative path, query, fragment，包括一个可以放置重复key-value的DuplicatableDictionary），
+
+一个完善的OAuthv1库（C函数实现，但使用cocoa对象作参数）及相对应的NSMutableURLRequest和ASIHTTPRequest的扩展，
+
+一个OAuthv2库(结构同OAuthv1，但是由于OAuthv2比较简单，所以并没有什么代码）及OAuthv2 HTTP-MAC的扩展的实现（由于没有相应的服务器，所以没有测试）
+
+[ytoolkitdemo]里包含了下列服务的登录和获取数据的demo：
+
+Twitter(OAuthv1),
+
+Facebook(OAuthv2),
+
+豆瓣 (OAuthv1),
+
+新浪微博(OAuthv2跑通了，OAuthv1跑到最后一步，让用户输入PIN code，但是没有看到他们的文档里有相关的接口⋯⋯)
+
+QQ微博(OAuthv1)
+
+demo地址是
+https://github.com/sprhawk/ytoolkitdemo
+
+
+ytoolkit核心库是LGPLv3，ASIHTTPRequest的扩展未编译进核心库，使用FreeBSD发布。ytoolkitdemo使用FreeBSD发布。
 
