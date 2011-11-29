@@ -70,6 +70,33 @@ or
 * You can use OAuth 1.0 and 2.0 (draft 22) lib or their Cocoa additions
   * If you are using NSMutableURLRequest of ASIHTTPRequest, just use the related additions
   * If you are using other request lib, just use yoauth lib to generate an oauth authorization header (OAuth 1.0) or an oauth parameters (OAuth 2.0), and set them as spec accordingly.
+  * With NSMutableURLRequest:
+  ```Objective-c
+    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.douban.com/service/auth/request_token"]];
+    
+    // "old version of oauth.py (Douban is using) requires an 'OAuth realm=' format pattern
+    // So, the realm should be specified (even @"")
+    [request prepareOAuthv1RequestUsingConsumerKey:kDoubanConsumerKey
+                                 consumerSecretKey:kDoubanConsumerSecretKey
+                                             token:nil
+                                       tokenSecret:nil
+                                             realm:kDoubanRealm
+                                          verifier:nil
+                                          callback:nil];
+    [NSURLConnection connectionWithRequest:request delegate:self];
+  ``` 
+  * With [ASIHTTPRequest]:
+  ```Objective-c
+    NSURL * url = [NSURL URLWithString:@"http://api.douban.com/people/%40me/miniblog?alt=json"];
+        ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
+        request.delegate = self;
+        [request prepareOAuthv1RequestUsingConsumerKey:kDoubanConsumerKey
+                                     consumerSecretKey:kDoubanConsumerSecretKey
+                                                 token:self.accesstoken
+                                           tokenSecret:self.tokensecret
+                                                 realm:kDoubanRealm];
+        [request startAsynchronous];
+  ```
   * Just see the [ytoolkitdemo] for usage example of most popular sites
 
 [cocoa additions]: https://github.com/sprhawk/ytoolkit/tree/master/ycocoaadditions/code
