@@ -116,7 +116,7 @@ License
 
 The core of ytoolkit is distributed under [LGPL v3.0], you can freely link ytoolkit against any part of your program.
 
-Except that, the ASIHTTPRequest additions are under FreeBSD license, you can use it without any restrictions ( Because this ASIHTTPRequest may be compiled into your project)
+Except that, the ASIHTTPRequest additions are under BSD license, you can use it without any restrictions ( Because this ASIHTTPRequest may be compiled into your project)
 
 [LGPL v3.0]: http://www.gnu.org/licenses/lgpl.html
 
@@ -150,5 +150,5 @@ demo地址是
 https://github.com/sprhawk/ytoolkitdemo
 
 
-ytoolkit核心库是LGPLv3，ASIHTTPRequest的扩展未编译进核心库，使用FreeBSD发布。ytoolkitdemo使用FreeBSD发布。
+ytoolkit核心库是LGPLv3，ASIHTTPRequest的扩展未编译进核心库，使用BSD发布。ytoolkitdemo使用BSD发布。
 
