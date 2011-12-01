@@ -26,13 +26,14 @@
 //OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import "ASIHTTPRequest.h"
+#import "ASIHTTPRequestWrapper.h"
 #import <ytoolkit/yoauthv1.h>
 // Note 1: Not support to sign a post data when YES == streamPostDataFromDisk.
 //          "Are you sure to sign a huge post data with OAuth?"
 // Note 2: "old version of oauth.py (which Douban is using currently) requires an 'OAuth realm=' format pattern
 //          So, the realm MUST be specified (even @"")
 
-@interface ASIHTTPRequest (YOAuthv1Request)
+@interface ASIHTTPRequestWrapper (YOAuthv1Request)
 //easist way (use Authorization / HMAC-SHA1
 - (void)prepareOAuthv1RequestUsingConsumerKey:(NSString *)consumerKey 
                             consumerSecretKey:(NSString *)consumerSecretKey
@@ -92,3 +93,4 @@
                                       callback:(NSString *)callback;
 
 @end
+

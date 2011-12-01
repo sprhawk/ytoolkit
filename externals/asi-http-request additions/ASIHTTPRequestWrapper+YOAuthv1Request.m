@@ -26,25 +26,26 @@
 //OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-#import "ASIHTTPRequest+YOAuthv1Request.h"
+#import "ASIHTTPRequestWrapper+YOAuthv1Request.h"
 #import "ASIFormDataRequest.h"
 #import <ytoolkit/NSString+YHTTPURLString.h>
 #import <ytoolkit/NSDictionary+YHTTPURLDictionary.h>
 #import <ytoolkit/yoauthv1.h>
 #import <ytoolkit/ymacros.h>
 
-@implementation ASIHTTPRequest (YOAuthv1Request)
+
+@implementation ASIHTTPRequestWrapper (YOAuthv1Request)
 
 - (NSDictionary *)postParametersForOAuthv1 {
     NSDictionary * postParameters = nil;
-    if (YIS_INSTANCE_OF(self, ASIFormDataRequest)) {
-        ASIFormDataRequest * formdataRequest = (ASIFormDataRequest *)self;
-        NSString * contentType = [formdataRequest.requestHeaders objectForKey:@"Content-Type"];
+    if (YIS_INSTANCE_OF(self.request, ASIFormDataRequest)) {
+        ASIFormDataRequest * formdataRequest = (ASIFormDataRequest *)self.request;
+        NSString * contentType = [[self allHTTPHeaderFields] objectForKey:@"Content-Type"];
         
         //Not supported streamPostDataFromDisk, are you sure to sign a huge post data with OAuth?
         if (![formdataRequest shouldStreamPostDataFromDisk]
             && [contentType hasPrefix:@"application/x-www-form-urlencoded"]) {
-            NSString * encodedQuery = [[[NSString alloc] initWithData:self.postBody 
+            NSString * encodedQuery = [[[NSString alloc] initWithData:[self HTTPBody]
                                                              encoding:NSUTF8StringEncoding] 
                                        autorelease];
             postParameters = [encodedQuery queryParameters];
@@ -65,8 +66,8 @@
 {
     NSDictionary * postParameters = [self postParametersForOAuthv1];
     NSString *header = YOAuthv1GetAuthorizationHeader(method,
-                                                      self.requestMethod,
-                                                      self.url.absoluteString,
+                                                      self.request.requestMethod,
+                                                      [self URL].absoluteString,
                                                       consumerKey, 
                                                       consumerSecretKey,
                                                       nil,
@@ -78,7 +79,8 @@
                                                       postParameters,
                                                       verifier,
                                                       callback);
-    [self addRequestHeader:@"Authorization" value:header];
+//    [self.request addRequestHeader:@"Authorization" value:header];
+    [self setValue:header forHTTPHeaderField:@"Authorization"];
 }
 
 
@@ -93,8 +95,8 @@
     NSDictionary * postParameters = [self postParametersForOAuthv1];
     
     NSDictionary * parameters = YOAuthv1GetSignedPostRequestParameters(method,
-                                                                       self.requestMethod,
-                                                                       self.url.absoluteString,
+                                                                       [self HTTPMethod],
+                                                                       self.URL.absoluteString,
                                                                        consumerKey, 
                                                                        consumerSecretKey,
                                                                        nil,
@@ -107,7 +109,7 @@
                                                                        callback);
     //maybe ContentType != "application/x-www-form-urlencoded", or there is not any parameters
     if (nil == postParameters) {
-        if (self.postBody) {
+        if (self.request.postBody) {
             // the contentType is not "application/x-www-form-urlencoded"
             @throw NSInvalidArgumentException;
             return;
@@ -119,7 +121,7 @@
     //But if the postdata is changed after the oauthv1 parameters added, the 
     //Signature will be changed
     NSMutableData * data = [[[body dataUsingEncoding:NSUTF8StringEncoding] mutableCopy]autorelease];
-    [self setPostBody:data];
+    [self.request setPostBody:data];
 }
 
 - (void)prepareOAuthv1QueryURIUsingConsumerKey:(NSString *)consumerKey 
@@ -130,9 +132,9 @@
                                       verifier:(NSString *)verifier
                                       callback:(NSString *)callback
 {
-    NSString * urlString = self.url.absoluteString;
+    NSString * urlString = self.URL.absoluteString;
     NSDictionary * parameters = YOAuthv1GetSignedRequestParameters(method,
-                                                                   self.requestMethod,
+                                                                   [self HTTPMethod],
                                                                    urlString,
                                                                    consumerKey, 
                                                                    consumerSecretKey,
@@ -146,7 +148,7 @@
                                                                    callback);
     NSString * newString = [urlString URLStringByAddingParameters:parameters];
     NSURL * newURL = [NSURL URLWithString:newString];
-    self.url = newURL;    
+    self.URL = newURL;    
 }
 
 - (void)prepareOAuthv1QueryURIUsingConsumerKey:(NSString *)consumerKey 
@@ -208,3 +210,4 @@
 
 
 @end
+
