@@ -35,4 +35,4 @@ Thumbs.db
 
 #IDE Projectfiles
 xcuserdata
-build
+project.xcworkspace
