@@ -21,6 +21,8 @@
 
 #define YRELEASE_SAFELY(_x) if(_x){[(_x) release];_x=nil;}
 #define YIS_INSTANCE_OF(_x, _class) ([_x isKindOfClass:[_class class]])
+#define INVALIDATE_TIMER(_x) if(_x){[(_x) invalidate];_x=nil;}
+#define INVALIDATE_RELEASE_TIMER(_x) if(_x){[(_x) invalidate];[(_x) release];_x=nil;}
 
 #define YLOG(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
