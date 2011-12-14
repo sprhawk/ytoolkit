@@ -20,6 +20,11 @@
 
 @interface NSMutableDictionary (YDuplicatableDictionary)
 - (void)addDuplicatableEntriesFromDictionary:(NSDictionary *)otherDictionary;
-- (void)addDuplicatableObject:(id)object key:(id)key;
+- (void)addDuplicatableObject:(id)object forKey:(id)key;
 - (void)addDuplicatableObjectsAndKeys:(id)firstObject, ... NS_REQUIRES_NIL_TERMINATION;
+- (void)removeDuplicableObject:(id)object forKey:(id)key;
+#if NS_BLOCKS_AVAILABLE
+- (void)enumerateDuplicableKeysAndObjectsUsingBlock:(void (^)(id, id, BOOL *))block ;
+#endif
+
 @end

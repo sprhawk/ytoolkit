@@ -52,7 +52,7 @@
         NSString * decodedKey = [key urldecodedString];
         NSString * decodedValue = [value urldecodedString];
         
-        [responseDictionary addDuplicatableObject:decodedValue key:decodedKey];
+        [responseDictionary addDuplicatableObject:decodedValue forKey:decodedKey];
     }
     return responseDictionary;
 }

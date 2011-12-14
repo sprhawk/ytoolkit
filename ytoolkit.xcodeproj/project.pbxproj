@@ -133,6 +133,16 @@
 		9AC17B10147BB57C00499A4F /* yoauth_utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0992D0147BA5D0005FBF4B /* yoauth_utilities.m */; };
 		9AC17B11147BB58700499A4F /* yoauthv1_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0992C7147BA5D0005FBF4B /* yoauthv1_internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9AE98E9C147E5FC000D4488F /* ytiming.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE98E9B147E5FC000D4488F /* ytiming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AED768E1498FECE001074E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC0FCD31481318000E020AF /* Cocoa.framework */; };
+		9AED76981498FEF5001074E5 /* NSDictionary+YHTTPURLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0992AA147BA5B6005FBF4B /* NSDictionary+YHTTPURLDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AED76991498FEF5001074E5 /* NSDictionary+YHTTPURLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0992AB147BA5B6005FBF4B /* NSDictionary+YHTTPURLDictionary.m */; };
+		9AED769A1498FEF5001074E5 /* NSMutableDictionary+YDuplicatableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0992AC147BA5B6005FBF4B /* NSMutableDictionary+YDuplicatableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AED769B1498FEF5001074E5 /* NSMutableDictionary+YDuplicatableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0992AD147BA5B6005FBF4B /* NSMutableDictionary+YDuplicatableDictionary.m */; };
+		9AED769C1498FEF5001074E5 /* NSString+YHTTPURLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0992AE147BA5B6005FBF4B /* NSString+YHTTPURLString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AED769D1498FEF5001074E5 /* NSString+YHTTPURLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0992AF147BA5B6005FBF4B /* NSString+YHTTPURLString.m */; };
+		9AED769E1498FEF5001074E5 /* ycocoaadditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0992B1147BA5B6005FBF4B /* ycocoaadditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AED76AE14990669001074E5 /* ydefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A09916C147B9E69005FBF4B /* ydefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AED76AF14990669001074E5 /* ymacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A09916D147B9E69005FBF4B /* ymacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -324,6 +334,8 @@
 		9AE98DD1147D690200D4488F /* ASIHTTPRequest+YOAuthv1Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest+YOAuthv1Request.h"; sourceTree = "<group>"; };
 		9AE98DD2147D690200D4488F /* ASIHTTPRequest+YOAuthv1Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequest+YOAuthv1Request.m"; sourceTree = "<group>"; };
 		9AE98E9B147E5FC000D4488F /* ytiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytiming.h; sourceTree = "<group>"; };
+		9AED768D1498FECE001074E5 /* libycocoaadditions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libycocoaadditions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AED76911498FECE001074E5 /* ycocoaaditions-MacOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ycocoaaditions-MacOSX-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +454,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AED768A1498FECE001074E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AED768E1498FECE001074E5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -460,6 +480,7 @@
 				9AC17AED147BB3FC00499A4F /* ytoolkit */,
 				9AE98DCF147D690200D4488F /* externals */,
 				9AC0FCD91481318000E020AF /* ytoolkitbundle */,
+				9AED768F1498FECE001074E5 /* ycocoaaditions-MacOSX */,
 				9A09913D147B9D6C005FBF4B /* Frameworks */,
 				9A09913C147B9D6C005FBF4B /* Products */,
 			);
@@ -480,6 +501,7 @@
 				9AC0C4E4147E9B1C008E5AD5 /* libyoauthadditions.a */,
 				9AC0C4F1147E9B1C008E5AD5 /* yoauthadditionsTests.octest */,
 				9AC0FCD21481318000E020AF /* ytoolkitbundle.bundle */,
+				9AED768D1498FECE001074E5 /* libycocoaadditions.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -779,6 +801,22 @@
 			path = "asi-http-request additions";
 			sourceTree = "<group>";
 		};
+		9AED768F1498FECE001074E5 /* ycocoaaditions-MacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				9AED76901498FECE001074E5 /* Supporting Files */,
+			);
+			path = "ycocoaaditions-MacOSX";
+			sourceTree = "<group>";
+		};
+		9AED76901498FECE001074E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AED76911498FECE001074E5 /* ycocoaaditions-MacOSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -879,12 +917,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AED768B1498FECE001074E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AED76981498FEF5001074E5 /* NSDictionary+YHTTPURLDictionary.h in Headers */,
+				9AED769A1498FEF5001074E5 /* NSMutableDictionary+YDuplicatableDictionary.h in Headers */,
+				9AED769C1498FEF5001074E5 /* NSString+YHTTPURLString.h in Headers */,
+				9AED769E1498FEF5001074E5 /* ycocoaadditions.h in Headers */,
+				9AED76AE14990669001074E5 /* ydefines.h in Headers */,
+				9AED76AF14990669001074E5 /* ymacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9A09913A147B9D6C005FBF4B /* ybase64 */ = {
+		9A09913A147B9D6C005FBF4B /* ybase64-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A09915D147B9D6C005FBF4B /* Build configuration list for PBXNativeTarget "ybase64" */;
+			buildConfigurationList = 9A09915D147B9D6C005FBF4B /* Build configuration list for PBXNativeTarget "ybase64-iOS" */;
 			buildPhases = (
 				9A099137147B9D6C005FBF4B /* Sources */,
 				9A099138147B9D6C005FBF4B /* Frameworks */,
@@ -894,7 +945,7 @@
 			);
 			dependencies = (
 			);
-			name = ybase64;
+			name = "ybase64-iOS";
 			productName = ybase64;
 			productReference = 9A09913B147B9D6C005FBF4B /* libybase64.a */;
 			productType = "com.apple.product-type.library.static";
@@ -918,9 +969,9 @@
 			productReference = 9A09914B147B9D6C005FBF4B /* ybase64Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9A0991A3147BA059005FBF4B /* ycocoaadditions */ = {
+		9A0991A3147BA059005FBF4B /* ycocoaadditions-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A0991C1147BA059005FBF4B /* Build configuration list for PBXNativeTarget "ycocoaadditions" */;
+			buildConfigurationList = 9A0991C1147BA059005FBF4B /* Build configuration list for PBXNativeTarget "ycocoaadditions-iOS" */;
 			buildPhases = (
 				9A0991A0147BA059005FBF4B /* Sources */,
 				9A0991A1147BA059005FBF4B /* Frameworks */,
@@ -930,7 +981,7 @@
 			);
 			dependencies = (
 			);
-			name = ycocoaadditions;
+			name = "ycocoaadditions-iOS";
 			productName = ycocoaadditions;
 			productReference = 9A0991A4147BA059005FBF4B /* libycocoaadditions.a */;
 			productType = "com.apple.product-type.library.static";
@@ -954,9 +1005,9 @@
 			productReference = 9A0991B1147BA059005FBF4B /* ycocoaadditionsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9A0991DA147BA274005FBF4B /* ybase64additions */ = {
+		9A0991DA147BA274005FBF4B /* ybase64additions-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A0991F8147BA274005FBF4B /* Build configuration list for PBXNativeTarget "ybase64additions" */;
+			buildConfigurationList = 9A0991F8147BA274005FBF4B /* Build configuration list for PBXNativeTarget "ybase64additions-iOS" */;
 			buildPhases = (
 				9A0991D7147BA274005FBF4B /* Sources */,
 				9A0991D8147BA274005FBF4B /* Frameworks */,
@@ -967,7 +1018,7 @@
 			dependencies = (
 				9A0992E6147BA630005FBF4B /* PBXTargetDependency */,
 			);
-			name = ybase64additions;
+			name = "ybase64additions-iOS";
 			productName = ybase64additions;
 			productReference = 9A0991DB147BA274005FBF4B /* libybase64additions.a */;
 			productType = "com.apple.product-type.library.static";
@@ -991,9 +1042,9 @@
 			productReference = 9A0991E8147BA274005FBF4B /* ybase64additionsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9A099230147BA3F6005FBF4B /* yoauth */ = {
+		9A099230147BA3F6005FBF4B /* yoauth-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A09924E147BA3F7005FBF4B /* Build configuration list for PBXNativeTarget "yoauth" */;
+			buildConfigurationList = 9A09924E147BA3F7005FBF4B /* Build configuration list for PBXNativeTarget "yoauth-iOS" */;
 			buildPhases = (
 				9A09922D147BA3F6005FBF4B /* Sources */,
 				9A09922E147BA3F6005FBF4B /* Frameworks */,
@@ -1006,7 +1057,7 @@
 				9A0992EA147BA640005FBF4B /* PBXTargetDependency */,
 				9A0992EC147BA640005FBF4B /* PBXTargetDependency */,
 			);
-			name = yoauth;
+			name = "yoauth-iOS";
 			productName = yoauth;
 			productReference = 9A099231147BA3F6005FBF4B /* libyoauth.a */;
 			productType = "com.apple.product-type.library.static";
@@ -1033,9 +1084,9 @@
 			productReference = 9A09923E147BA3F6005FBF4B /* yoauthTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9AC0C4E3147E9B1C008E5AD5 /* yoauthadditions */ = {
+		9AC0C4E3147E9B1C008E5AD5 /* yoauthadditions-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AC0C505147E9B1D008E5AD5 /* Build configuration list for PBXNativeTarget "yoauthadditions" */;
+			buildConfigurationList = 9AC0C505147E9B1D008E5AD5 /* Build configuration list for PBXNativeTarget "yoauthadditions-iOS" */;
 			buildPhases = (
 				9AC0C4E0147E9B1C008E5AD5 /* Sources */,
 				9AC0C4E1147E9B1C008E5AD5 /* Frameworks */,
@@ -1046,7 +1097,7 @@
 			dependencies = (
 				9AABEA04147F8FBD00A678B3 /* PBXTargetDependency */,
 			);
-			name = yoauthadditions;
+			name = "yoauthadditions-iOS";
 			productName = yoauthadditions;
 			productReference = 9AC0C4E4147E9B1C008E5AD5 /* libyoauthadditions.a */;
 			productType = "com.apple.product-type.library.static";
@@ -1107,6 +1158,23 @@
 			productReference = 9AC17AEC147BB3FC00499A4F /* ytoolkit.framework */;
 			productType = "com.apple.product-type.bundle";
 		};
+		9AED768C1498FECE001074E5 /* ycocoaadditions-MacOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AED76951498FECE001074E5 /* Build configuration list for PBXNativeTarget "ycocoaadditions-MacOSX" */;
+			buildPhases = (
+				9AED76891498FECE001074E5 /* Sources */,
+				9AED768A1498FECE001074E5 /* Frameworks */,
+				9AED768B1498FECE001074E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ycocoaadditions-MacOSX";
+			productName = "ycocoaaditions-MacOSX";
+			productReference = 9AED768D1498FECE001074E5 /* libycocoaadditions.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1129,11 +1197,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A09913A147B9D6C005FBF4B /* ybase64 */,
-				9A0991DA147BA274005FBF4B /* ybase64additions */,
-				9A0991A3147BA059005FBF4B /* ycocoaadditions */,
-				9A099230147BA3F6005FBF4B /* yoauth */,
-				9AC0C4E3147E9B1C008E5AD5 /* yoauthadditions */,
+				9A09913A147B9D6C005FBF4B /* ybase64-iOS */,
+				9A0991DA147BA274005FBF4B /* ybase64additions-iOS */,
+				9A0991A3147BA059005FBF4B /* ycocoaadditions-iOS */,
+				9A099230147BA3F6005FBF4B /* yoauth-iOS */,
+				9AC0C4E3147E9B1C008E5AD5 /* yoauthadditions-iOS */,
 				9A09914A147B9D6C005FBF4B /* ybase64Tests */,
 				9A0991B0147BA059005FBF4B /* ycocoaadditionsTests */,
 				9A0991E7147BA274005FBF4B /* ybase64additionsTests */,
@@ -1141,6 +1209,7 @@
 				9AC17AEB147BB3FC00499A4F /* ytoolkit */,
 				9AC0C4F0147E9B1C008E5AD5 /* yoauthadditionsTests */,
 				9AC0FCD11481318000E020AF /* ytoolkitbundle */,
+				9AED768C1498FECE001074E5 /* ycocoaadditions-MacOSX */,
 			);
 		};
 /* End PBXProject section */
@@ -1416,72 +1485,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AED76891498FECE001074E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AED76991498FEF5001074E5 /* NSDictionary+YHTTPURLDictionary.m in Sources */,
+				9AED769B1498FEF5001074E5 /* NSMutableDictionary+YDuplicatableDictionary.m in Sources */,
+				9AED769D1498FEF5001074E5 /* NSString+YHTTPURLString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		9A099152147B9D6C005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A09913A147B9D6C005FBF4B /* ybase64 */;
+			target = 9A09913A147B9D6C005FBF4B /* ybase64-iOS */;
 			targetProxy = 9A099151147B9D6C005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A0991B6147BA059005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A0991A3147BA059005FBF4B /* ycocoaadditions */;
+			target = 9A0991A3147BA059005FBF4B /* ycocoaadditions-iOS */;
 			targetProxy = 9A0991B5147BA059005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A0991ED147BA274005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A0991DA147BA274005FBF4B /* ybase64additions */;
+			target = 9A0991DA147BA274005FBF4B /* ybase64additions-iOS */;
 			targetProxy = 9A0991EC147BA274005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A099243147BA3F7005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A099230147BA3F6005FBF4B /* yoauth */;
+			target = 9A099230147BA3F6005FBF4B /* yoauth-iOS */;
 			targetProxy = 9A099242147BA3F7005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A0992E6147BA630005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A09913A147B9D6C005FBF4B /* ybase64 */;
+			target = 9A09913A147B9D6C005FBF4B /* ybase64-iOS */;
 			targetProxy = 9A0992E5147BA630005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A0992E8147BA640005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A09913A147B9D6C005FBF4B /* ybase64 */;
+			target = 9A09913A147B9D6C005FBF4B /* ybase64-iOS */;
 			targetProxy = 9A0992E7147BA640005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A0992EA147BA640005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A0991DA147BA274005FBF4B /* ybase64additions */;
+			target = 9A0991DA147BA274005FBF4B /* ybase64additions-iOS */;
 			targetProxy = 9A0992E9147BA640005FBF4B /* PBXContainerItemProxy */;
 		};
 		9A0992EC147BA640005FBF4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A0991A3147BA059005FBF4B /* ycocoaadditions */;
+			target = 9A0991A3147BA059005FBF4B /* ycocoaadditions-iOS */;
 			targetProxy = 9A0992EB147BA640005FBF4B /* PBXContainerItemProxy */;
 		};
 		9AABEA04147F8FBD00A678B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A099230147BA3F6005FBF4B /* yoauth */;
+			target = 9A099230147BA3F6005FBF4B /* yoauth-iOS */;
 			targetProxy = 9AABEA03147F8FBD00A678B3 /* PBXContainerItemProxy */;
 		};
 		9AABEA07147FA50000A678B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A09913A147B9D6C005FBF4B /* ybase64 */;
+			target = 9A09913A147B9D6C005FBF4B /* ybase64-iOS */;
 			targetProxy = 9AABEA06147FA50000A678B3 /* PBXContainerItemProxy */;
 		};
 		9AABEA09147FA50000A678B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A0991DA147BA274005FBF4B /* ybase64additions */;
+			target = 9A0991DA147BA274005FBF4B /* ybase64additions-iOS */;
 			targetProxy = 9AABEA08147FA50000A678B3 /* PBXContainerItemProxy */;
 		};
 		9AABEA0B147FA50000A678B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A0991A3147BA059005FBF4B /* ycocoaadditions */;
+			target = 9A0991A3147BA059005FBF4B /* ycocoaadditions-iOS */;
 			targetProxy = 9AABEA0A147FA50000A678B3 /* PBXContainerItemProxy */;
 		};
 		9AC0C4F6147E9B1C008E5AD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9AC0C4E3147E9B1C008E5AD5 /* yoauthadditions */;
+			target = 9AC0C4E3147E9B1C008E5AD5 /* yoauthadditions-iOS */;
 			targetProxy = 9AC0C4F5147E9B1C008E5AD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1595,7 +1674,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ybase64;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1624,7 +1703,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ybase64;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1724,7 +1803,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ycocoaadditions;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1750,7 +1829,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ycocoaadditions;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1850,7 +1929,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ybase64additions;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1876,7 +1955,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ybase64additions;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1976,7 +2055,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yoauth;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2002,7 +2081,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yoauth;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2102,7 +2181,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yoauthadditions;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2128,7 +2207,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yoauthadditions;
 				PUBLIC_HEADERS_FOLDER_PATH = "/usr/local/include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2331,6 +2410,57 @@
 			};
 			name = Release;
 		};
+		9AED76961498FECE001074E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ycocoaaditions-MacOSX/ycocoaaditions-MacOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ycocoaadditions;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AED76971498FECE001074E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ycocoaaditions-MacOSX/ycocoaaditions-MacOSX-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = ycocoaadditions;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2343,7 +2473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A09915D147B9D6C005FBF4B /* Build configuration list for PBXNativeTarget "ybase64" */ = {
+		9A09915D147B9D6C005FBF4B /* Build configuration list for PBXNativeTarget "ybase64-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A09915E147B9D6C005FBF4B /* Debug */,
@@ -2361,7 +2491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A0991C1147BA059005FBF4B /* Build configuration list for PBXNativeTarget "ycocoaadditions" */ = {
+		9A0991C1147BA059005FBF4B /* Build configuration list for PBXNativeTarget "ycocoaadditions-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A0991C2147BA059005FBF4B /* Debug */,
@@ -2379,7 +2509,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A0991F8147BA274005FBF4B /* Build configuration list for PBXNativeTarget "ybase64additions" */ = {
+		9A0991F8147BA274005FBF4B /* Build configuration list for PBXNativeTarget "ybase64additions-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A0991F9147BA274005FBF4B /* Debug */,
@@ -2397,7 +2527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A09924E147BA3F7005FBF4B /* Build configuration list for PBXNativeTarget "yoauth" */ = {
+		9A09924E147BA3F7005FBF4B /* Build configuration list for PBXNativeTarget "yoauth-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A09924F147BA3F7005FBF4B /* Debug */,
@@ -2415,7 +2545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AC0C505147E9B1D008E5AD5 /* Build configuration list for PBXNativeTarget "yoauthadditions" */ = {
+		9AC0C505147E9B1D008E5AD5 /* Build configuration list for PBXNativeTarget "yoauthadditions-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AC0C501147E9B1D008E5AD5 /* Debug */,
@@ -2450,6 +2580,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9AED76951498FECE001074E5 /* Build configuration list for PBXNativeTarget "ycocoaadditions-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AED76961498FECE001074E5 /* Debug */,
+				9AED76971498FECE001074E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

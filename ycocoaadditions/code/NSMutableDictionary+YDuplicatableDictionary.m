@@ -33,12 +33,12 @@
             @throw NSInvalidArgumentException;
             return;
         }
-        [self addDuplicatableObject:firstObject key:key];
+        [self addDuplicatableObject:firstObject forKey:key];
         
         while ((eachObject = va_arg(argumentList, id))) {
             key = va_arg(argumentList, id);
             if (key) {
-                [self addDuplicatableObject:eachObject key:key];
+                [self addDuplicatableObject:eachObject forKey:key];
             }
             else {
                 break;
@@ -49,38 +49,81 @@
 
 }
 
-- (void)addDuplicatableObject:(id)object key:(id)key 
+- (void)addDuplicatableObject:(id)object forKey:(id)key 
 {
     if (nil == object || nil == key) {
         @throw NSInvalidArgumentException;
     }
-    if (key) {
-        id value = [self objectForKey:key];
-        if (nil == value) {
-            [self setObject:object forKey:key];
+    id value = [self objectForKey:key];
+    if (nil == value) {
+        [self setObject:object forKey:key];
+    }
+    else {
+        if (YIS_INSTANCE_OF(value, NSCountedSet)) {
+            [value addObject:object];
+        }
+        else if (YIS_INSTANCE_OF(value, NSSet)) {
+            NSCountedSet * set = [NSCountedSet setWithSet:value];
+            [set addObject:object];
+            [self setObject:set forKey:key];
         }
         else {
-            if (YIS_INSTANCE_OF(value, NSCountedSet)) {
-                [value addObject:object];
-            }
-            else if (YIS_INSTANCE_OF(value, NSSet)) {
-                NSCountedSet * set = [NSCountedSet setWithSet:value];
-                [set addObject:object];
-                [self setObject:set forKey:key];
-            }
-            else {
-                NSCountedSet * set = [NSCountedSet setWithCapacity:2];
-                [set addObject:value];
-                [set addObject:object];
-                [self setObject:set forKey:key];
-            }
+            NSCountedSet * set = [NSCountedSet setWithCapacity:2];
+            [set addObject:value];
+            [set addObject:object];
+            [self setObject:set forKey:key];
         }
     }
 }
 - (void)addDuplicatableEntriesFromDictionary:(NSDictionary *)otherDictionary {
+    if (nil == otherDictionary) {
+        @throw NSInvalidArgumentException;
+    }
     for (id key in otherDictionary) {
         id value = [otherDictionary objectForKey:key];
-        [self addDuplicatableObject:value key:key];
+        [self addDuplicatableObject:value forKey:key];
     }
 }
+
+- (void)removeDuplicableObject:(id)object forKey:(id)key
+{
+    if (nil == object || nil == key) {
+        @throw NSInvalidArgumentException;
+    }
+    
+    id value = [self objectForKey:key];
+    if (nil == value) {
+        return ;
+    }
+    else {
+        if (YIS_INSTANCE_OF(value, NSCountedSet)) {
+            NSCountedSet * set = (NSCountedSet *)value;
+            [set removeObject:object];
+        }
+        else if (YIS_INSTANCE_OF(value, NSSet)) {
+            NSCountedSet * set = [NSCountedSet setWithSet:value];
+            [set removeObject:object];
+            [self setObject:set forKey:key];
+        }
+        else {
+            [self removeObjectForKey:key];
+        }
+    }
+}
+
+#if NS_BLOCKS_AVAILABLE
+- (void)enumerateDuplicableKeysAndObjectsUsingBlock:(void (^)(id, id, BOOL *))block 
+{
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL * stop){
+        if (YIS_INSTANCE_OF(obj, NSSet)) {
+            for (id subObj in obj) {
+                block(key, subObj, stop);
+            }
+        }
+        else {
+            block(key, obj, stop);
+        }
+    }];
+}
+#endif
 @end
