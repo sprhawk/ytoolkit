@@ -477,12 +477,12 @@ NSString * YOAuthv1GetSignatureBaseString(YOAuthv1SignatureMethod signatureMetho
         NSString * encodedKey = [key yoauthv1EscapedString];
         
         if (YIS_INSTANCE_OF(value, NSString)) {
-            [newParameters addDuplicatableObject:[value yoauthv1EscapedString] key:encodedKey];
+            [newParameters addDuplicatableObject:[value yoauthv1EscapedString] forKey:encodedKey];
         }
         else if (YIS_INSTANCE_OF(value, NSSet)) {
             for (id item in value) {
                 if (YIS_INSTANCE_OF(item, NSString)) {
-                    [newParameters addDuplicatableObject:[item yoauthv1EscapedString] key:encodedKey];
+                    [newParameters addDuplicatableObject:[item yoauthv1EscapedString] forKey:encodedKey];
                 }
             }
         }
