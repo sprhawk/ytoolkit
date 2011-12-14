@@ -105,7 +105,7 @@
             [set removeObject:object];
             [self setObject:set forKey:key];
         }
-        else {
+        else if ([value isEqual:object]){
             [self removeObjectForKey:key];
         }
     }
