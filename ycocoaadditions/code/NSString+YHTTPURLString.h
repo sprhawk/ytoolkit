@@ -56,4 +56,5 @@
 //requestURI is not in Unit Test
 - (NSString *)requestURI NOTTESTED;
 
+- (NSArray *)emailParts;
 @end
