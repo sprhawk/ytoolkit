@@ -74,6 +74,9 @@ static NSUInteger __YOAuthv2ErrorHashCodeMap[YOAuthv2ErrorTypeCodeMax] = {0};
                                                                   __YToolkitBundle, 
                                                                   errorType);
         NSMutableDictionary * userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
+      if (nil == errorName) {
+        errorName = @"Unknown";
+      }
         [userInfo setObject:errorName forKey:NSLocalizedDescriptionKey];
         [userInfo addEntriesFromDictionary:parameters];
         return [[self class] errorWithDomain:YOAuthv2ErrorDomain

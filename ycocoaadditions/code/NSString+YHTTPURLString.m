@@ -410,4 +410,15 @@
     return [NSString stringWithFormat:@"%@%@%@", absolutePath, queryCompoent?queryCompoent:@"", fragmentCompoent?fragmentCompoent:@""];
 }
 
+- (NSArray *)emailParts
+{
+    NSArray * emailParts = [self componentsSeparatedByString:@"@"];
+    if (2 != [emailParts count]) {
+        return nil;
+    }
+    
+    // may be user@anydomain , will not test the number of the parts of the domain.
+    return emailParts;
+}
+
 @end
