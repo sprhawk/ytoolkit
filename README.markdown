@@ -142,7 +142,7 @@ Facebook(OAuthv2),
 
 豆瓣 (OAuthv1),
 
-新浪微博(OAuthv2跑通了，OAuthv1跑到最后一步，让用户输入PIN code，但是没有看到他们的文档里有相关的接口⋯⋯)
+新浪微博(OAuth及OAuth 2都跑通了)
 
 QQ微博(OAuthv1)
 
