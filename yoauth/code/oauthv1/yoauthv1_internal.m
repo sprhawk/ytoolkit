@@ -354,9 +354,12 @@ NSString * YOAuthv1GetSignatureBaseString(YOAuthv1SignatureMethod signatureMetho
     
     NSMutableDictionary * oauthParameters = [[NSMutableDictionary alloc] initWithCapacity:8];
     NSDictionary * parameters = [url queryParameters];
-    
-    [oauthParameters addDuplicatableEntriesFromDictionary:[parameters oauthv1EscapedParameters]];
-    [oauthParameters addDuplicatableEntriesFromDictionary:[postParameters oauthv1EscapedParameters]];
+    if (parameters) {
+        [oauthParameters addDuplicatableEntriesFromDictionary:[parameters oauthv1EscapedParameters]];
+    }
+    if (postParameters) {
+        [oauthParameters addDuplicatableEntriesFromDictionary:[postParameters oauthv1EscapedParameters]];
+    }
     
     parameters = YOAuthv1GetParameters(signatureMethod,
                                        requestMethod,
