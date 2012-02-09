@@ -296,9 +296,6 @@
 		9A0992DF147BA5DC005FBF4B /* yoauthTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "yoauthTests-Info.plist"; sourceTree = "<group>"; };
 		9A0992E0147BA5DC005FBF4B /* yoauthTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yoauthTests.h; sourceTree = "<group>"; };
 		9A0992E1147BA5DC005FBF4B /* yoauthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yoauthTests.m; sourceTree = "<group>"; };
-		9A5626591487861D001178FE /* ASIHTTPRequestWrapper+YOAuthv1Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequestWrapper+YOAuthv1Request.h"; sourceTree = "<group>"; };
-		9A56265A1487861D001178FE /* ASIHTTPRequestWrapper+YOAuthv1Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequestWrapper+YOAuthv1Request.m"; sourceTree = "<group>"; };
-		9A5626C614879D35001178FE /* HTTPRequestWrapperOAuthv1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequestWrapperOAuthv1.h; sourceTree = "<group>"; };
 		9A57F755147BAB3200B16AE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		9A57F764147BAE8A00B16AE9 /* YHTTPURLMutableDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTTPURLMutableDictionaryTest.m; sourceTree = "<group>"; };
 		9A57F765147BAE8A00B16AE9 /* YHTTPURLStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTTPURLStringTests.m; sourceTree = "<group>"; };
@@ -785,7 +782,6 @@
 			isa = PBXGroup;
 			children = (
 				9AE98DD0147D690200D4488F /* asi-http-request additions */,
-				9A5626C614879D35001178FE /* HTTPRequestWrapperOAuthv1.h */,
 			);
 			path = externals;
 			sourceTree = "<group>";
@@ -795,8 +791,6 @@
 			children = (
 				9AE98DD1147D690200D4488F /* ASIHTTPRequest+YOAuthv1Request.h */,
 				9AE98DD2147D690200D4488F /* ASIHTTPRequest+YOAuthv1Request.m */,
-				9A5626591487861D001178FE /* ASIHTTPRequestWrapper+YOAuthv1Request.h */,
-				9A56265A1487861D001178FE /* ASIHTTPRequestWrapper+YOAuthv1Request.m */,
 			);
 			path = "asi-http-request additions";
 			sourceTree = "<group>";
@@ -2588,6 +2582,7 @@
 				9AED76971498FECE001074E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
