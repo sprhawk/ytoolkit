@@ -48,7 +48,7 @@
             NSString * encodedQuery = [[[NSString alloc] initWithData:self.postBody 
                                                              encoding:NSUTF8StringEncoding] 
                                        autorelease];
-            postParameters = [encodedQuery queryParameters];
+            postParameters = [encodedQuery decodedUrlencodedParameters];
         }
     }
     return postParameters;
