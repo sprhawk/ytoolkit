@@ -39,6 +39,7 @@
     NSDictionary * postParameters = nil;
     if (YIS_INSTANCE_OF(self, ASIFormDataRequest)) {
         ASIFormDataRequest * formdataRequest = (ASIFormDataRequest *)self;
+      [self buildPostBody];
         NSString * contentType = [formdataRequest.requestHeaders objectForKey:@"Content-Type"];
         
         //Not supported streamPostDataFromDisk, are you sure to sign a huge post data with OAuth?
