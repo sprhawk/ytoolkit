@@ -76,6 +76,9 @@
     }
 }
 - (void)addDuplicatableEntriesFromDictionary:(NSDictionary *)otherDictionary {
+    if (nil == otherDictionary) {
+        @throw NSInvalidArgumentException;
+    }
     for (id key in otherDictionary) {
         id value = [otherDictionary objectForKey:key];
         [self addDuplicatableObject:value forKey:key];

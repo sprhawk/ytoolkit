@@ -19,10 +19,43 @@
 #ifndef oauth_macros_h
 #define oauth_macros_h
 
-#define YRELEASE_SAFELY(_x) if(_x){[(_x) release];_x=nil;}
+#ifndef __has_feature
+#define __has_feature(x) 0
+#endif
+
+#if __has_feature(objc_arc)
+  #define HAS_OBJC_ARC 1
+#else
+  #define HAS_OBJC_ARC 0
+#endif
+
+#define NON_OBJC_ARC !HAS_OBJC_ARC
+
+#if HAS_OBJC_ARC
+  #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_5_0
+    #define YASSIGN_WEAK assign
+    #define YUNSAFE_UNRETAINED __unsafe_unretained
+  #else
+    #define YWEAK weak
+    #define YUNSAFE_UNRETAINED 
+  #endif
+
+  #define YRETAIN_STRONG strong
+  #define YBRIDGE  __bridge
+  #define YRELEASE_SAFELY(_x) if(_x){_x=nil;}
+
+#else 
+  #define YBRIDGE
+  #define YRETAIN_STRONG retain
+  #define YASSIGN_WEAK assign
+  #define YINVALIDATE_RELEASE_TIMER(_x) if(_x){[(_x) invalidate];[(_x) release];_x=nil;}
+  #define YRELEASE_SAFELY(_x) if(_x){[(_x) release];_x=nil;}
+  #define YUNSAFE_UNRETAINED 
+#endif
+
+
 #define YIS_INSTANCE_OF(_x, _class) ([_x isKindOfClass:[_class class]])
-#define INVALIDATE_TIMER(_x) if(_x){[(_x) invalidate];_x=nil;}
-#define INVALIDATE_RELEASE_TIMER(_x) if(_x){[(_x) invalidate];[(_x) release];_x=nil;}
+#define YINVALIDATE_TIMER(_x) if(_x){[(_x) invalidate];_x=nil;}
 
 #define YLOG(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
