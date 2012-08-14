@@ -62,7 +62,7 @@
 #ifdef _DEBUG
 #define YDEBUGLOG YLOG
 #else
-#define YDEBUGLOG ((void)0)
+#define YDEBUGLOG(xx, ...) ((void)0)
 #endif
 
 // for SenTests
