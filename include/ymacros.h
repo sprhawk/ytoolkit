@@ -57,8 +57,8 @@
 #define YIS_INSTANCE_OF(_x, _class) ([_x isKindOfClass:[_class class]])
 #define YINVALIDATE_TIMER(_x) if(_x){[(_x) invalidate];_x=nil;}
 
-#define YDECL_NOTIFICATION(notification) extern NSString* notification;
-#define YIMPL_NOTIFICATION(notification) NSString* notification = @#notification;
+#define YDECL_NOTIFICATION(notification) extern NSString* const notification;
+#define YIMPL_NOTIFICATION(notification) NSString* const notification = @#notification;
 
 #define YLOCALIZED(macro) NSLocalizedString(@#macro, @#macro)
 
