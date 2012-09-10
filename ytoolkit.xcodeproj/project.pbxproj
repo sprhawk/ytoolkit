@@ -64,12 +64,12 @@
 		9A0992DB147BA5D0005FBF4B /* yoauth_utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0992D0147BA5D0005FBF4B /* yoauth_utilities.m */; };
 		9A0992E2147BA5DC005FBF4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0992DD147BA5DC005FBF4B /* InfoPlist.strings */; };
 		9A0992E4147BA5DC005FBF4B /* yoauthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0992E1147BA5DC005FBF4B /* yoauthTests.m */; };
-		9A24904D15FDC979008F7A3A /* Literials.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A24904B15FDC979008F7A3A /* Literials.h */; };
-		9A24904E15FDC979008F7A3A /* Literials.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A24904B15FDC979008F7A3A /* Literials.h */; };
-		9A24904F15FDC979008F7A3A /* Literials.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A24904B15FDC979008F7A3A /* Literials.h */; };
-		9A24905015FDC979008F7A3A /* Literials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24904C15FDC979008F7A3A /* Literials.m */; };
-		9A24905115FDC979008F7A3A /* Literials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24904C15FDC979008F7A3A /* Literials.m */; };
-		9A24905215FDC979008F7A3A /* Literials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24904C15FDC979008F7A3A /* Literials.m */; };
+		9A24904D15FDC979008F7A3A /* YLiterials.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A24904B15FDC979008F7A3A /* YLiterials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A24904E15FDC979008F7A3A /* YLiterials.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A24904B15FDC979008F7A3A /* YLiterials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A24904F15FDC979008F7A3A /* YLiterials.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A24904B15FDC979008F7A3A /* YLiterials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A24905015FDC979008F7A3A /* YLiterials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24904C15FDC979008F7A3A /* YLiterials.m */; };
+		9A24905115FDC979008F7A3A /* YLiterials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24904C15FDC979008F7A3A /* YLiterials.m */; };
+		9A24905215FDC979008F7A3A /* YLiterials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24904C15FDC979008F7A3A /* YLiterials.m */; };
 		9A57F756147BAB3200B16AE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57F755147BAB3200B16AE9 /* Security.framework */; };
 		9A57F75C147BAC9300B16AE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57F755147BAB3200B16AE9 /* Security.framework */; };
 		9A57F75E147BACA300B16AE9 /* libybase64additions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0991DB147BA274005FBF4B /* libybase64additions.a */; };
@@ -302,8 +302,8 @@
 		9A0992DF147BA5DC005FBF4B /* yoauthTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "yoauthTests-Info.plist"; sourceTree = "<group>"; };
 		9A0992E0147BA5DC005FBF4B /* yoauthTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yoauthTests.h; sourceTree = "<group>"; };
 		9A0992E1147BA5DC005FBF4B /* yoauthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yoauthTests.m; sourceTree = "<group>"; };
-		9A24904B15FDC979008F7A3A /* Literials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Literials.h; sourceTree = "<group>"; };
-		9A24904C15FDC979008F7A3A /* Literials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Literials.m; sourceTree = "<group>"; };
+		9A24904B15FDC979008F7A3A /* YLiterials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLiterials.h; sourceTree = "<group>"; };
+		9A24904C15FDC979008F7A3A /* YLiterials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLiterials.m; sourceTree = "<group>"; };
 		9A57F755147BAB3200B16AE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		9A57F764147BAE8A00B16AE9 /* YHTTPURLMutableDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTTPURLMutableDictionaryTest.m; sourceTree = "<group>"; };
 		9A57F765147BAE8A00B16AE9 /* YHTTPURLStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTTPURLStringTests.m; sourceTree = "<group>"; };
@@ -703,8 +703,8 @@
 		9A24902A15FDB847008F7A3A /* Literials */ = {
 			isa = PBXGroup;
 			children = (
-				9A24904B15FDC979008F7A3A /* Literials.h */,
-				9A24904C15FDC979008F7A3A /* Literials.m */,
+				9A24904B15FDC979008F7A3A /* YLiterials.h */,
+				9A24904C15FDC979008F7A3A /* YLiterials.m */,
 			);
 			path = Literials;
 			sourceTree = "<group>";
@@ -856,7 +856,7 @@
 				9AABE9F4147F8E1500A678B3 /* ytiming.h in Headers */,
 				9AABE9F5147F8E1500A678B3 /* ydefines.h in Headers */,
 				9AABE9F6147F8E1500A678B3 /* ymacros.h in Headers */,
-				9A24904D15FDC979008F7A3A /* Literials.h in Headers */,
+				9A24904D15FDC979008F7A3A /* YLiterials.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,7 +927,7 @@
 				9AABE9FD147F8EB400A678B3 /* NSMutableURLRequest+YOAuth.h in Headers */,
 				9AC0FCA2147FF3C000E020AF /* yoauthadditions.h in Headers */,
 				9AC0FCCB14812C7100E020AF /* NSError+YOAuthv2.h in Headers */,
-				9A24904E15FDC979008F7A3A /* Literials.h in Headers */,
+				9A24904E15FDC979008F7A3A /* YLiterials.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,7 +941,7 @@
 				9AED769E1498FEF5001074E5 /* ycocoaadditions.h in Headers */,
 				9AED76AE14990669001074E5 /* ydefines.h in Headers */,
 				9AED76AF14990669001074E5 /* ymacros.h in Headers */,
-				9A24904F15FDC979008F7A3A /* Literials.h in Headers */,
+				9A24904F15FDC979008F7A3A /* YLiterials.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1409,7 +1409,7 @@
 				9A0992B3147BA5B6005FBF4B /* NSDictionary+YHTTPURLDictionary.m in Sources */,
 				9A0992B5147BA5B6005FBF4B /* NSMutableDictionary+YDuplicatableDictionary.m in Sources */,
 				9A0992B7147BA5B6005FBF4B /* NSString+YHTTPURLString.m in Sources */,
-				9A24905015FDC979008F7A3A /* Literials.m in Sources */,
+				9A24905015FDC979008F7A3A /* YLiterials.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1498,7 +1498,7 @@
 				9AC17B10147BB57C00499A4F /* yoauth_utilities.m in Sources */,
 				9AABEA05147F90F400A678B3 /* NSMutableURLRequest+YOAuth.m in Sources */,
 				9AC0FCCD14812C7A00E020AF /* NSError+YOAuthv2.m in Sources */,
-				9A24905115FDC979008F7A3A /* Literials.m in Sources */,
+				9A24905115FDC979008F7A3A /* YLiterials.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1509,7 +1509,7 @@
 				9AED76991498FEF5001074E5 /* NSDictionary+YHTTPURLDictionary.m in Sources */,
 				9AED769B1498FEF5001074E5 /* NSMutableDictionary+YDuplicatableDictionary.m in Sources */,
 				9AED769D1498FEF5001074E5 /* NSString+YHTTPURLString.m in Sources */,
-				9A24905215FDC979008F7A3A /* Literials.m in Sources */,
+				9A24905215FDC979008F7A3A /* YLiterials.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

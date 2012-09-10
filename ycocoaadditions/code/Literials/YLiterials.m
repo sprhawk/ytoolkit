@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 Douban Inc. All rights reserved.
 //
 
-#import "Literials.h"
+#import "YLiterials.h"
 
 #if !defined(__IPHONE_6_0) || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_6_0
 
