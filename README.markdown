@@ -115,7 +115,7 @@ or
 >  ```Objective-C
 >     NSArray * a = @[obj1, obj2, obj3];
 >     id obj = a[0]; // this literial need a new method which is only available under iOS 6, the literial category added the missing methods to array/dictionary.
-
+>  ```
 
 License
 --------------------
