@@ -111,7 +111,7 @@ or
 
 [cocoa additions]: https://github.com/sprhawk/ytoolkit/tree/master/ycocoaadditions/code
 
-    * new Objective-C literials which was available only in iOS6, the literials category could add the new feature to iOS below iOS SDK 6, so you can use:
+  * new Objective-C literials which was available only in iOS6, the literials category could add the new feature to iOS below iOS SDK 6, so you can use:
 
 >  ```Objective-C
 >     NSArray * a = @[obj1, obj2, obj3];
