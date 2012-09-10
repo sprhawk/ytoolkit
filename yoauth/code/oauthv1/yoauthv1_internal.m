@@ -525,7 +525,7 @@ NSString * YOAuthv1GetSignatureBaseString(YOAuthv1SignatureMethod signatureMetho
     for (NSString * key in sortedKeys) {
         id value = [self objectForKey:key];
         if (YIS_INSTANCE_OF(value, NSString)) {
-            NSString * str = [NSString stringWithFormat:@"%@%=%@", key, value];
+            NSString * str = [NSString stringWithFormat:@"%@=%@", key, (NSString *)value];
             [sortedParameters addObject:str];
         }
         else if (YIS_INSTANCE_OF(value, NSSet)) {
@@ -533,7 +533,7 @@ NSString * YOAuthv1GetSignatureBaseString(YOAuthv1SignatureMethod signatureMetho
             NSArray * sortDescriptors = [NSArray arrayWithObjects:desc ,nil];
             NSArray * values = [value sortedArrayUsingDescriptors:sortDescriptors];
             for (id item in values) {
-                NSString * str = [NSString stringWithFormat:@"%@=%@", key, item];
+                NSString * str = [NSString stringWithFormat:@"%@=%@", key, (NSString *)item];
                 [sortedParameters addObject:str];
             }
         }

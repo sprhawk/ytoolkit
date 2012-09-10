@@ -168,7 +168,7 @@ NSString * YOAuthv2GetAuthorizationMACHeader(NSString * mac_identifier,
                 return nil;
             }
         }
-        [requestString appendFormat:@"%\n", [port integerValue]];
+        [requestString appendFormat:@"%d\n", [port integerValue]];
         
         if ([mac_algorithm isEqualToString:YOAuthv2MacAlgorithmHmacSha1]) {
             unsigned char hhmac[CC_SHA1_DIGEST_LENGTH] = {0};
