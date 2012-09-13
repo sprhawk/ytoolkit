@@ -55,6 +55,8 @@
 
 
 #define YIS_INSTANCE_OF(_x, _class) ([_x isKindOfClass:[_class class]])
+#define YIF_OBJECT_FOR_KEY_IS_INSTANCE_OF(OBJ, DICT, KEY, CLS) OBJ = [DICT objectForKey:KEY]; if(YIS_INSTANCE_OF(OBJ, CLS))
+
 #define YINVALIDATE_TIMER(_x) if(_x){[(_x) invalidate];_x=nil;}
 
 #define YDECL_NOTIFICATION(notification) extern NSString* const notification;
