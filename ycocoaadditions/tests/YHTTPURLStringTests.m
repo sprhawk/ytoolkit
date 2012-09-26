@@ -540,4 +540,11 @@
     STAssertEqualObjects(queryString, shouldbe, YSOURCE_IS(url));
 }
 
+- (void)testDecode
+{
+    NSString * s = @"http://wappaygw.alipay.com/service/rest.htm?format=xml&partner=2088701733357147&req_data=<auth_and_execute_req><request_token>20120914a7fbe3c7133682df1b7423a0a2e896c8</request_token></auth_and_execute_req>&sec_id=0001&service=alipay.wap.auth.authAndExecute&v=2.0&sign=N8PdeOVabEASeM61u8PBIulsZyX7VjX28XApLJW0T%2FZxHRgzn4GXrkmMX1FNIOaMyyWc4R7Gimx88eMkhCiaNfpoEQoJINgcznrUDipBjYwqXIhNYym3AeInzruUV6L9s5b51CU4BupeVZJMrywTgCbfaCKw8%2B8HH%2ByCcUzr2CI%3D";
+    NSDictionary * param  = [s queryParameters];
+    NSLog(@"param:%@", param);
+}
+
 @end
