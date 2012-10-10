@@ -1,5 +1,9 @@
 YToolkit for Cocoa
 ===========
+What's new
+----------
+
+Added a binary ytoolkit.framework, which contains armv6, armv7 and armv7s arch lib
 
 What it includes
 ----------------
