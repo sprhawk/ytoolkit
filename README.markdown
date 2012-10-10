@@ -2,7 +2,7 @@ YToolkit for Cocoa
 ===========
 What's new
 ----------
-
+2012-10-10
 Added a binary ytoolkit.framework, which contains armv6, armv7 and armv7s arch lib
 https://github.com/downloads/sprhawk/ytoolkit/ytoolkit.framework.zip
 
