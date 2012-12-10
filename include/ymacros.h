@@ -66,7 +66,7 @@
 
 #define YLOG(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
-#ifdef _DEBUG
+#if defined(_DEBUG) || defined(DEBUG)
 #define YDEBUGLOG YLOG
 #else
 #define YDEBUGLOG(xx, ...) ((void)0)
