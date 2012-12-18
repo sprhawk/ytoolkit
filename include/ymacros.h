@@ -72,6 +72,9 @@
 #define YDEBUGLOG(xx, ...) ((void)0)
 #endif
 
+//from web/designer's hex color value to % value
+#define YHEX_TO_FLOAT(x) ((float)0x##x * 1.0f / 255.0f)
+
 // for SenTests
 #define YSHOULD_BE_BUT_RESULT(original, shouldbe, result) \
                 @"process %@ result should be %@, but result is %@", original, shouldbe, result
