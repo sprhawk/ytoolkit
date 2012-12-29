@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4329A1A1168EAFC1003128C5 /* NSString+YBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329A19F168EAFC1003128C5 /* NSString+YBase64.h */; };
+		4329A1A2168EAFC1003128C5 /* NSString+YBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329A19F168EAFC1003128C5 /* NSString+YBase64.h */; };
+		4329A1A3168EAFC1003128C5 /* NSString+YBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4329A1A0168EAFC1003128C5 /* NSString+YBase64.m */; };
+		4329A1A4168EAFC1003128C5 /* NSString+YBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4329A1A0168EAFC1003128C5 /* NSString+YBase64.m */; };
 		9A09913F147B9D6C005FBF4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A09913E147B9D6C005FBF4B /* Foundation.framework */; };
 		9A09914D147B9D6C005FBF4B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A09914C147B9D6C005FBF4B /* SenTestingKit.framework */; };
 		9A09914F147B9D6C005FBF4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A09914E147B9D6C005FBF4B /* UIKit.framework */; };
@@ -240,6 +244,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4329A19F168EAFC1003128C5 /* NSString+YBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YBase64.h"; sourceTree = "<group>"; };
+		4329A1A0168EAFC1003128C5 /* NSString+YBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YBase64.m"; sourceTree = "<group>"; };
 		9A09913B147B9D6C005FBF4B /* libybase64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libybase64.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A09913E147B9D6C005FBF4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A09914B147B9D6C005FBF4B /* ybase64Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ybase64Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -594,6 +600,8 @@
 				9A099293147BA59A005FBF4B /* NSData+YBase64String.m */,
 				9A099294147BA59A005FBF4B /* NSString+YBase64toData.h */,
 				9A099295147BA59A005FBF4B /* NSString+YBase64toData.m */,
+				4329A19F168EAFC1003128C5 /* NSString+YBase64.h */,
+				4329A1A0168EAFC1003128C5 /* NSString+YBase64.m */,
 				9A099296147BA59A005FBF4B /* ybase64additions-Prefix.pch */,
 				9A099297147BA59A005FBF4B /* ybase64additions.h */,
 			);
@@ -852,6 +860,7 @@
 				9AABE9F1147F8E1400A678B3 /* ytiming.h in Headers */,
 				9AABE9F2147F8E1400A678B3 /* ydefines.h in Headers */,
 				9AABE9F3147F8E1400A678B3 /* ymacros.h in Headers */,
+				4329A1A1168EAFC1003128C5 /* NSString+YBase64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,6 +917,7 @@
 				9AABE9FD147F8EB400A678B3 /* NSMutableURLRequest+YOAuth.h in Headers */,
 				9AC0FCA2147FF3C000E020AF /* yoauthadditions.h in Headers */,
 				9AC0FCCB14812C7100E020AF /* NSError+YOAuthv2.h in Headers */,
+				4329A1A2168EAFC1003128C5 /* NSString+YBase64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1406,6 +1416,7 @@
 			files = (
 				9A09929A147BA59A005FBF4B /* NSData+YBase64String.m in Sources */,
 				9A09929C147BA59A005FBF4B /* NSString+YBase64toData.m in Sources */,
+				4329A1A3168EAFC1003128C5 /* NSString+YBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1476,6 +1487,7 @@
 				9AC17B10147BB57C00499A4F /* yoauth_utilities.m in Sources */,
 				9AABEA05147F90F400A678B3 /* NSMutableURLRequest+YOAuth.m in Sources */,
 				9AC0FCCD14812C7A00E020AF /* NSError+YOAuthv2.m in Sources */,
+				4329A1A4168EAFC1003128C5 /* NSString+YBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
