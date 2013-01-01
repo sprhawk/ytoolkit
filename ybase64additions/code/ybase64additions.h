@@ -19,3 +19,4 @@
 
 #import "NSData+YBase64String.h"
 #import "NSString+YBase64toData.h"
+#import "NSString+YBase64.h"

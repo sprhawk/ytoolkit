@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4329A1A1168EAFC1003128C5 /* NSString+YBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329A19F168EAFC1003128C5 /* NSString+YBase64.h */; };
-		4329A1A2168EAFC1003128C5 /* NSString+YBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329A19F168EAFC1003128C5 /* NSString+YBase64.h */; };
+		4329A1A1168EAFC1003128C5 /* NSString+YBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329A19F168EAFC1003128C5 /* NSString+YBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4329A1A2168EAFC1003128C5 /* NSString+YBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329A19F168EAFC1003128C5 /* NSString+YBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4329A1A3168EAFC1003128C5 /* NSString+YBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4329A1A0168EAFC1003128C5 /* NSString+YBase64.m */; };
 		4329A1A4168EAFC1003128C5 /* NSString+YBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4329A1A0168EAFC1003128C5 /* NSString+YBase64.m */; };
 		9A09913F147B9D6C005FBF4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A09913E147B9D6C005FBF4B /* Foundation.framework */; };
