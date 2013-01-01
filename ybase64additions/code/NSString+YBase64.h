@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (YBase64)
-- (NSString *)base64;
+- (NSString *)base64string;
 @end
