@@ -72,6 +72,16 @@
     
     l = ybase64_decode(encoded, len, message, sizeof(message));
     STAssertTrue( 0 == memcmp(message, "abcdefghijklmnopqrstuvwxyz\xa", 27), @"\"YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXoK\" should be decode as \"abcdefghijklmnopqrstuvwxyz\\xa\", result:%s", message);
+    
+    strcpy(encoded, "a2tra2s=");
+    len = strlen(encoded);
+    l = ybase64_decode(encoded, len, NULL, 0);
+    STAssertTrue(5 == l, @"\"a2tra2s=\" should be decode as \"kkkkk\", result len:%d", l);
+    
+    memset(message, 0, sizeof(message));
+    l = ybase64_decode(encoded, len, message, sizeof(message));
+    STAssertTrue( 0 == memcmp(message, "kkkkk", 5), @"\"a2tra2s=\" should be decode as \"kkkkk\", result:%s", message);
+    
 }
 
 @end

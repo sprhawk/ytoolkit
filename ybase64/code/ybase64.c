@@ -331,7 +331,7 @@ size_t ybase64_decode( IN const char * from, //input must be an Base64 encoded t
             d2 = base64_decoding_map[c2];
             d3 = base64_decoding_map[c3];
             
-            if (__ == d1 || __ == d2 || __ == d3 || d3 & 0x3c) {
+            if (__ == d1 || __ == d2 || __ == d3 || (d3 & 0x3)) {
                 return j;
             }
             
@@ -421,4 +421,11 @@ void * ybase64_decode_alloc( IN const void * from,
         }
     }
     return to;
+}
+                
+void ybase64_free(IN void * p)
+{
+    if(p) {
+        free(p);
+    }
 }

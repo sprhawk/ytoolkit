@@ -48,5 +48,5 @@ YEXTERN size_t ybase64_decode( IN const char * from, //input must be an Base64 e
 YEXTERN void * ybase64_decode_alloc( IN const void * from, 
                                     IN const size_t from_len,
                                     OUT size_t *to_len);
-
+YEXTERN void ybase64_free(IN void * p);
 #endif
