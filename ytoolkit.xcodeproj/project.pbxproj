@@ -358,7 +358,6 @@
 		9AC17AF1147BB3FC00499A4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9AC17AF3147BB3FC00499A4F /* ytoolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ytoolkit-Prefix.pch"; sourceTree = "<group>"; };
 		9AC17B13147BC0B600499A4F /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
-		9AC17B14147BC0B600499A4F /* COPYING.LESSER */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.LESSER; sourceTree = "<group>"; };
 		9AE98DD1147D690200D4488F /* ASIHTTPRequest+YOAuthv1Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest+YOAuthv1Request.h"; sourceTree = "<group>"; };
 		9AE98DD2147D690200D4488F /* ASIHTTPRequest+YOAuthv1Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequest+YOAuthv1Request.m"; sourceTree = "<group>"; };
 		9AE98E9B147E5FC000D4488F /* ytiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytiming.h; sourceTree = "<group>"; };
@@ -525,7 +524,6 @@
 			isa = PBXGroup;
 			children = (
 				9AC17B13147BC0B600499A4F /* COPYING */,
-				9AC17B14147BC0B600499A4F /* COPYING.LESSER */,
 				9AC17B12147BC0A800499A4F /* docs */,
 				9A09916A147B9E69005FBF4B /* include */,
 				9A09927D147BA568005FBF4B /* ycocoaadditions */,
@@ -2630,6 +2628,7 @@
 				439E13A5171FF1FE006CA769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A099133147B9D23005FBF4B /* Build configuration list for PBXProject "ytoolkit" */ = {
 			isa = XCConfigurationList;
